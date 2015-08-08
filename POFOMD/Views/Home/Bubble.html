@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--Bubble scripts-->
+    <script src="//localhost:5000/static/js/jquery.min.js"></script>
+    <script src="//localhost:5000/static/js/modernizr-2.5.3.min.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/base64.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/boot.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/accounting.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/utils/utils.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/aggregator.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/bubbletree/2.0/bubbletree.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/vis4.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/Tween.js"></script>
+    <script src="//localhost:5000/static/js/raphael-min.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/kartograph-201301.min.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/chroma.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/jquery.qtip.min.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/jquery.history.js"></script>
+    <link href="//localhost:5000/static/openspendingjs/lib/vendor/bubbletree/1.0/bubbletree.css" rel="stylesheet" type="text/css">
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/datatables/js/jquery.dataTables.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/lib/vendor/datatables/dataTables.bootstrap.js"></script>
+    <script src="//localhost:5000/static/openspendingjs/app/data_table/openspending.data_table.js"></script>
+    <link href="//localhost:5000/static/openspendingjs/app/bubblemap/map.css" rel="stylesheet" type="text/css">
+    <script src="//localhost:5000/static/openspendingjs/app/bubblemap/bubblemap.js"></script>
+    <script src="~/../../img/functions/cofog.js"></script>
+    <!--Bubble scripts-->
+    <link rel="stylesheet" href="~/../../content/jquery-ui.css">
+    <script src="~/../../scripts/jquery-ui.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        (function ($) {
+            yepnope([
+             {
+                 load: OpenSpending.getBubbleMapDependencies('http://localhost:5000/static/openspendingjs'),
+                 complete: function () {
+                     new OpenSpending.BubbleMap({
+                         openspendingjs: 'http://localhost:5000/static/openspendingjs',
+                         query: {
+                             apiUrl: 'http://localhost:5000/api',
+                             dataset: 'tstbg',
+                             cuts: ['year:2015'],
+                             drilldowns: ['time', 'Categoria', 'Subcategoria'],
+                             breakdown: 'time',
+                             rootNodeLabel: 'Total em 2015'
+                         },
+                         bubbleStyles: {
+                             'time': BubbleTreeStyles.Cofog1,
+                             'Categoria': BubbleTreeStyles.Cofog2,
+                             'Subcategoria': BubbleTreeStyles.Cofog3,
+                             'name': {
+                                 'defesa': { icon: 'defence.svg' },
+                                 'servi-os-p-blicos-gerais': { icon: 'government-uk.svg' },
+                                 'sa-de': { icon: 'health.svg' },
+                                 'recrea--o-cultura-e-religi-o': { icon: 'culture.svg' },
+                                 'educa--o': { icon: 'education.svg' },
+                                 'habita--o-e-equipamentos-colectivos': { icon: 'our-streets.svg' },
+                                 'assuntos-econ-micos': { icon: 'social-systems.svg' },
+                                 'a-prote--o-do-ambiente': { icon: 'environment.svg' },
+                                 '-rg-os-executivos-e-legislativos-assuntos-financeiros-e-fiscais-assuntos-externos': { icon: 'legislative.svg', shortLabel: '<a href="Help/011" class="bolha">Órgãos executivos e legislativos, administração financeira e fiscal, assuntos externos</a>' },
+                                 '-rg-os-executivos-e-legislativos-administra--o-financeira-e-fiscal-assuntos-externos': { shortLabel: '<a href="Help/011" class="bolha">Órgãos executivos e legislativos, administração financeira e fiscal, assuntos externos</a>' },
+                                 'ajuda-econ-mica-estrangeira': { shortLabel: '<a href="Help/012" class="bolha">Ajuda econômica estrangeira</a>' },
+                                 'servi-os-gerais': { shortLabel: '<a href="Help/013" class="bolha">Serviços gerais</a>' },
+                                 'a-pesquisa-b-sica': { shortLabel: '<a href="Help/014" class="bolha">A pesquisa básica</a>' },
+                                 'servi-os-p-blicos-gerais-de-i---d': { shortLabel: '<a href="Help/015" class="bolha">Serviços públicos gerais de I & D</a>' },
+                                 'geral-ne-servi-os-p-blicos': { shortLabel: '<a href="Help/016" class="bolha">Geral n.e. serviços públicos</a>' },
+                                 'opera--es-de-d-vida-p-blica': { shortLabel: '<a href="Help/017" class="bolha">Operações de dívida pública</a>' },
+                                 'transfer-ncias-de-car-cter-geral-entre-diferentes-n-veis-de-governo': { shortLabel: '<a href="Help/018" class="bolha">Transferências de carácter geral entre diferentes níveis de governo</a>' },
+                                 'a-defesa-militar': { shortLabel: '<a href="Help/021" class="bolha">A defesa militar</a>' },
+                                 'defesa-civil': { shortLabel: '<a href="Help/022" class="bolha">Defesa civil</a>' },
+                                 'ajuda-militar-estrangeira': { shortLabel: '<a href="Help/023" class="bolha">Ajuda militar estrangeira</a>' },
+                                 'defesa-de-i---d': { shortLabel: '<a href="Help/024" class="bolha">Defesa de I & D</a>' },
+                                 'ne-defesa': { shortLabel: '<a href="Help/025" class="bolha">N.e. Defesa</a>' },
+                                 'os-servi-os-policiais': { shortLabel: '<a href="Help/031" class="bolha">Os serviços policiais</a>' },
+                                 'servi-os-de-protec--o-contra-inc-ndios': { shortLabel: '<a href="Help/032" class="bolha">Serviços de protecção contra incêndios</a>' },
+                                 'tribunais': { shortLabel: '<a href="Help/033" class="bolha">Tribunais</a>' },
+                                 'pris-es': { shortLabel: '<a href="Help/034" class="bolha">Prisões</a>' },
+                                 'r---d-seguran-a-e-ordem-p-blica': { shortLabel: '<a href="Help/035" class="bolha">R & D Segurança e ordem pública</a>' },
+                                 'ordem-p-blica-e-seguran-a-ne': { shortLabel: '<a href="Help/036" class="bolha">Ordem pública e segurança n.e.</a>' },
+                                 'gerais-econ-micas-comerciais-e-trabalhistas-assuntos': { shortLabel: '<a href="Help/041" class="bolha">Gerais econômicas, comerciais e trabalhistas assuntos</a>' },
+                                 'agricultura-silvicultura-pesca-e-ca-a': { shortLabel: '<a href="Help/042" class="bolha">Agricultura, silvicultura, pesca e caça</a>' },
+                                 'combust-vel-e-energia': { shortLabel: '<a href="Help/043" class="bolha">Combustível e energia</a>' },
+                                 'minera--o-ind-stria-e-constru--o': { shortLabel: '<a href="Help/044" class="bolha">Mineração, indústria e construção</a>' },
+                                 'transporte': { shortLabel: '<a href="Help/045" class="bolha">Transporte</a>' },
+                                 'comunica--o': { shortLabel: '<a href="Help/046" class="bolha">Comunicação</a>' },
+                                 'outras-ind-strias': { shortLabel: '<a href="Help/047" class="bolha">Outras indústrias</a>' },
+                                 'assuntos-econ-micos-de-p---d': { shortLabel: '<a href="Help/048" class="bolha">Assuntos econômicos de P & D</a>' },
+                                 'assuntos-econ-micos-ne': { shortLabel: '<a href="Help/049" class="bolha">Assuntos econômicos n.e.</a>' },
+                                 'gest-o-de-res-duos': { shortLabel: '<a href="Help/051" class="bolha">Gestão de resíduos</a>' },
+                                 'gest-o-das--guas-residuais': { shortLabel: '<a href="Help/052" class="bolha">Gestão das águas residuais</a>' },
+                                 'redu--o-da-polui--o': { shortLabel: '<a href="Help/053" class="bolha">Redução da poluição</a>' },
+                                 'protec--o-da-biodiversidade-e-paisagem': { shortLabel: '<a href="Help/054" class="bolha">Protecção da biodiversidade e paisagem</a>' },
+                                 'a-protec--o-do-ambiente-de-p---d': { shortLabel: '<a href="Help/055" class="bolha">A protecção do ambiente de P & D</a>' },
+                                 'ne-prote--o-ambiental': { shortLabel: '<a href="Help/056" class="bolha">N.e. proteção ambiental</a>' },
+                                 'desenvolvimento-habitacional': { shortLabel: '<a href="Help/061" class="bolha">Desenvolvimento habitacional</a>' },
+                                 'desenvolvimento-comunit-rio': { shortLabel: '<a href="Help/062" class="bolha">Desenvolvimento comunitário</a>' },
+                                 'abastecimento-de--gua': { shortLabel: '<a href="Help/063" class="bolha">Abastecimento de água</a>' },
+                                 'ilumina--o-p-blica': { shortLabel: '<a href="Help/064" class="bolha">Iluminação pública</a>' },
+                                 'r---d-habita--o-e-equipamentos-colectivos': { shortLabel: '<a href="Help/065" class="bolha">R & D Habitação e equipamentos colectivos</a>' },
+                                 'habita--o-e-equipamentos-colectivos-ne': { shortLabel: '<a href="Help/066" class="bolha">Habitação e equipamentos colectivos n.e.</a>' },
+                                 'medicamentos-aparelhos-e-equipamentos': { shortLabel: '<a href="Help/071" class="bolha">Medicamentos, aparelhos e equipamentos</a>' },
+                                 'servi-os-ambulatoriais': { shortLabel: '<a href="Help/072" class="bolha">Serviços ambulatoriais</a>' },
+                                 'servi-os-hospitalares': { shortLabel: '<a href="Help/073" class="bolha">Serviços hospitalares</a>' },
+                                 'servi-os-de-sa-de-p-blica': { shortLabel: '<a href="Help/074" class="bolha">Serviços de saúde pública</a>' },
+                                 'r---d-da-sa-de': { shortLabel: '<a href="Help/075" class="bolha">R & D da Saúde</a>' },
+                                 'ne-sa-de': { shortLabel: '<a href="Help/076" class="bolha">N.e. Saúde</a>' },
+                                 'servi-os-desportivos-e-recreativos': { shortLabel: '<a href="Help/081" class="bolha">Serviços desportivos e recreativos</a>' },
+                                 'servi-os-culturais': { shortLabel: '<a href="Help/082" class="bolha">Serviços culturais</a>' },
+                                 'servi-os-de-radiodifus-o-e-publica--o': { shortLabel: '<a href="Help/083" class="bolha">Serviços de radiodifusão e publicação</a>' },
+                                 'servi-os-comunit-rios-religiosos-e-outros': { shortLabel: '<a href="Help/084" class="bolha">Serviços comunitários religiosos e outros</a>' },
+                                 'r---d-recrea--o-cultura-e-religi-o': { shortLabel: '<a href="Help/085" class="bolha">R & D recreação, cultura e religião</a>' },
+                                 'recrea--o-cultura-e-religi-o-ne': { shortLabel: '<a href="Help/086" class="bolha">Recreação, cultura e religião n.e.</a>' },
+                                 'pr--prim-rio-e-prim-rio': { shortLabel: '<a href="Help/091" class="bolha">Pré-primário e primário</a>' },
+                                 'educa--o-secund-ria': { shortLabel: '<a href="Help/092" class="bolha">Educação secundária</a>' },
+                                 'ensino-n-o-superior-p-s-secund-rio': { shortLabel: '<a href="Help/093" class="bolha">Ensino não superior pós-secundário</a>' },
+                                 'educa--o-terci-ria': { shortLabel: '<a href="Help/094" class="bolha">Educação terciária</a>' },
+                                 'educa--o-n-o-defin-vel-por-n-veis': { shortLabel: '<a href="Help/095" class="bolha">Educação não definível por níveis</a>' },
+                                 'servi-os-de-apoio---educa--o': { shortLabel: '<a href="Help/096" class="bolha">Serviços de apoio à educação</a>' },
+                                 'r---d-educa--o': { shortLabel: '<a href="Help/097" class="bolha">R & D Educação</a>' },
+                                 'educa--o-ne': { shortLabel: '<a href="Help/098" class="bolha">Educação n.e.</a>' },
+                                 'doen-a-e-invalidez': { shortLabel: '<a href="Help/101" class="bolha">Doença e invalidez</a>' },
+                                 'velhice': { shortLabel: '<a href="Help/102" class="bolha">Velhice</a>' },
+                                 'sobreviventes': { shortLabel: '<a href="Help/103" class="bolha">Sobreviventes</a>' },
+                                 'fam-lia-e-crian-as': { shortLabel: '<a href="Help/104" class="bolha">Família e crianças</a>' },
+                                 'desemprego': { shortLabel: '<a href="Help/105" class="bolha">Desemprego</a>' },
+                                 'habita--o': { shortLabel: '<a href="Help/106" class="bolha">Habitação</a>' },
+                                 'ne-exclus-o-social': { shortLabel: '<a href="Help/107" class="bolha">N.e. exclusão social</a>' },
+                                 'protec--o-social-r---d': { shortLabel: '<a href="Help/108" class="bolha">Protecção social R & D</a>' },
+                                 'ne-protec--o-social': { shortLabel: '<a href="Help/109" class="bolha">N.e. protecção social</a>' }
+                                 }
+                         },
+                         table: { show: false }
+                     });
+                 }
+             }
+            ]); // yepnope()
+        })(jQuery)
+
+    </script>
+
+    <div id="wdmmg-bubblemap">
+        <div id="preloader" style="text-align: center; padding: 100px"><img src="~/../../img/ajax-loader.gif" style="vertical-align:top" /> &nbsp;<span class="txt">loading javascript libraries</span></div>
+
+        <div id="wdmmg-bubbletree" class="bubbletree"></div>
+        <!--
+        <div id="wdmmg-bt">
+            <div class="bubbletree-wrapper">
+                <div id="wdmmg-bubbletree" class="bubbletree"></div>
+            </div>
+        </div>-->
+    </div><!-- /#wdmmg-bubblemap -->
+    <div id="dialog" title="">
+        
+    </div>
+
+
+    <script type="text/javascript">
+    $(function () {
+        $("#dialog").dialog({
+            autoOpen: false,
+            draggable: false,
+            modal: true,
+            height: 'auto',
+            width: 'auto',
+            position: ['center', 10],
+            dialogClass: "fixed-dialog"
+        });
+    });
+
+    $(".bubbletree").on("click", ".bolha", function (e) {
+        e.preventDefault();
+        $("#dialog").load($(this).attr("href")).dialog("open");
+        $("#dialog").dialog('option', 'title', $(this).text());
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">POFOMD</a>
+                <!--@Html.ActionLink("POFOMD", "Index", "Home", new { area = "" }, new { @class = "navbar-brand page-scroll" })-->
+            </div>
+            <div class="navbar-collapse collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#graph">Graficos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#expli">Explicativos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#coment">Comentário</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                </ul>
+                <div id="LoginButton">
+                    @{ Html.RenderPartial("_LoginPartial"); }
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <div id="LoginCadastro">
+        @{ Html.RenderPartial("_LoginCadastro"); }
+    </div>
+
+    <!--
+    <div class="container body-content">
+    <hr />
+    <footer>
+    <p>&copy; @DateTime.Now.Year - Rafael Bottega</p>
+    </footer>
+    </div>
+    -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/scrolling")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

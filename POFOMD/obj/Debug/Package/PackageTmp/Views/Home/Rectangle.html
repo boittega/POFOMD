@@ -1,0 +1,45 @@
+﻿
+<html>
+<head>
+    <title></title>
+    <!--Retangulos scripts-->
+    <script src="//localhost:5000/static/js/jquery.min.js"></script>
+    <script src="//localhost:5000/static/js/json2.js"></script>
+    <script src="//localhost:5000/static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="//localhost:5000/static/openspendingjs/prod/boot.js"></script>
+    <script type="text/javascript" src="//localhost:5000/static/openspendingjs/lib/widgets.js"></script>
+    <script type="text/javascript" src="//localhost:5000/static/openspendingjs/app/bob/bob.js"></script>
+    <script type="text/javascript" src="//localhost:5000/static/openspendingjs/widgets/treemap/main.js"></script>
+    <link href="//localhost:5000/static/style/style.css" rel="stylesheet" />
+    <script defer="defer">
+        OpenSpending.scriptRoot = "//localhost:5000/static/openspendingjs";
+                OpenSpending.localeGroupSeparator = ",";
+                OpenSpending.localeDecimalSeparator = ".";
+    </script>
+    <!--Retangulos scripts-->
+</head>
+<body>
+    <div id="widget"></div>
+
+    <script defer="defer">
+        $(function () {
+            var state = {
+                "drilldowns": [
+                  "time",
+                  "Categoria",
+                  "Subcategoria"
+                ],
+                "year": 2015,
+                "cuts": {}
+            };
+            var context = {
+                dataset: "tstbg",
+                siteUrl: "http://localhost:5000",
+                embed: false
+            };
+            window.wdg_widget = new OpenSpending.Treemap($('#widget'), context, state);
+        });
+    </script>
+
+</body>
+</html>

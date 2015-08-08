@@ -1,0 +1,34 @@
+﻿@{ Layout = null; }
+@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated && ViewData["LogOff"] == null)
+{
+    using (Ajax.BeginForm("LogOff", "Account", new AjaxOptions() { UpdateTargetId = "LoginButton", LoadingElementId = "", InsertionMode = InsertionMode.Replace, OnSuccess="RecriaForgery" }))
+    {
+        @Html.AntiForgeryToken()
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @{var usuario = new POFOMD.Models.ApplicationDbContext().Users.SingleOrDefault(m => m.UserName == User.Identity.Name).Name;}
+            <a>Olá @usuario!</a>
+        </li>
+        <li>
+            <a href="#" onclick="$(this).closest('form').submit()">Sair</a>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        function RecriaForgery() {
+            $.get('@Url.Action("RefreshToken","Account")', function (html) {
+                var tokenValue = $('<div />').html(html).find('input[type="hidden"]').val();
+                $('#LoginCadastro input[name="__RequestVerificationToken"]').val(tokenValue)
+            });
+        }
+        
+    </script>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Entrar/Cadastrar-se</a></li>
+    </ul>
+}
+

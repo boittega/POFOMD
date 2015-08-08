@@ -1,0 +1,135 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.home-section {
+    height: 100%;
+    padding-top: 170px;
+    text-align: center;
+    background-image: url(~/../../img/Home.jpg);
+    background-size: cover;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+.home-section h1 {
+    font-size: 65px;
+}
+
+.home-section hr {
+    max-width: 50px;
+    border-color: #357ebd;
+    border-width: 3px;
+}
+
+.graph-section {
+    height: 100%;
+    padding-top: 80px;
+    text-align: center;
+    background: #fff;
+}
+
+.tree-section {
+    height: 100%;
+    padding-top: 80px;
+    text-align: center;
+    background: #fff;
+}
+
+.download-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background-image: url(../img/new-york-690868_1280.jpg);
+}
+
+.expli-section {
+    padding-top: 80px;
+    text-align: center;
+    background: #ced;
+}
+
+.coment-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 100px;
+    background-image: url(~/../../img/contact.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #aaa;
+}
+
+.top-nav-collapse .navbar-header .navbar-brand {
+    color: #777777;
+}
+
+.navbar-default .nav> li>a,
+.navbar-default .nav> li>a:focus {
+    color: #777;
+    font-weight: bolder;
+    font-size:larger;
+}
+
+.navbar-default .nav> li> a:hover,
+.navbar-default .nav> li> a:focus:hover {
+    background-color: #fff;
+    color: #01458f;
+}
+
+.top-nav-collapse .nav> li>a,
+.top-nav-collapse .nav> li>a:focus {
+    color: #777777;
+}
+
+.top-nav-collapse .nav> li>a:hover,
+.top-nav-collapse .nav> li>a:focus:hover {
+    color: #01458f;
+}

@@ -1,0 +1,715 @@
+﻿<!--
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<ul id="menu">
+    <li class="ui-widget-header">1</li>
+    <li id="011">01.1</li>
+    <li id="012">01.2</li>
+    <li>Option 3</li>
+    <li class="ui-widget-header">2</li>
+    <li id="012">01.2</li>
+    <li>Option 5</li>
+    <li>Option 6</li>
+</ul>
+-->
+
+<div class="main">
+    <div id="div011" class="content" title="Órgãos executivos e legislativos, administração financeira e fiscal, assuntos externos">
+        <h3>01.1.1 - Órgãos executivos e legislativos</h3>
+        <h4>Administração, operação ou apoio do executivo e dos órgãos legislativos.</h4>
+        <p>Inclui: escritório do chefe do Executivo em todos os níveis de governo - escritório do monarca, governador-geral, presidente, primeiro ministro, governador, prefeito, etc .; órgãos legislativos em todos os níveis de governo - parlamentos, câmaras de deputados, senadores, assembléias, câmaras municipais, etc .; consultivo, administrativo e equipes de funcionários políticos ligados a escritórios executivos principais e legislaturas; bibliotecas e outros serviços de referência que servem principalmente executivo e dos órgãos legislativos; As comodidades físicas proporcionadas para o Chefe do Executivo, do Legislativo e seus auxiliares; permanente ou ad hoc comissões e comitês criados por ou agindo em nome do chefe do executivo ou legislativo.</p>
+        <p>Exclui: gabinetes ministeriais, cargos de chefes de departamentos de governos locais, comitês interdepartamentais, etc. preocupado com uma função específica (classificados de acordo com a função).</p>
+        <h3>01.1.2 - Assuntos financeiros e fiscais</h3>
+        <h4>Administração de negócios e serviços financeiros e fiscais; gestão dos fundos públicos e da dívida pública; funcionamento dos regimes de tributação;</h4>
+        <p>- Operação de tesouraria ou Ministério das Finanças, o escritório de orçamento, a agência da Receita Federal, as autoridades aduaneiras, os serviços de contabilidade e auditoria;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e serviços financeiros e fiscais.</p>
+        <p>Inclui: os assuntos e serviços financeiros e fiscais em todos os níveis de governo.</p>
+        <p>Exclui: de subscrição ou de flotação encargos e pagamentos de juros sobre empréstimos do governo (<a href="017" class="help">01.7.0</a>); supervisão do setor bancário (<a href="041" class="help">04.1.1</a>).</p>
+        <h3>01.1.3 - Assuntos externos</h3>
+        <h4>A administração de assuntos externos e serviços;</h4>
+        <p>- Operação do Ministério das Relações Exteriores e as missões diplomáticas e consulares estacionados no exterior ou nos escritórios das organizações internacionais; operação ou suporte de informações e serviços culturais para distribuição além das fronteiras nacionais; operação ou suporte de bibliotecas, salas de leitura e serviços de referência localizadas no exterior;</p>
+        <p>- As assinaturas regulares e contribuições especiais para atender a despesas gerais de funcionamento de organizações internacionais.</p>
+        <p>Exclui: ajuda económica aos países em desenvolvimento e países em transição (<a href="012" class="help">01.2.1</a>); missões de ajuda econômica credenciados para governos estrangeiros (<a href="012" class="help">01.2.1</a>); contribuições para os programas de ajuda administrados por organizações internacionais ou regionais (<a href="012" class="help">01.2.2</a>); unidades militares estacionadas no estrangeiro (<a href="021" class="help">02.1.0</a>); ajuda militar a países estrangeiros (<a href="023" class="help">02.3.0</a>); Assuntos Gerais estrangeiras econômicas e comerciais (<a href="041" class="help">04.1.1</a>); assuntos turísticos e serviços (<a href="047" class="help">04.7.3</a>).</p>
+    </div>
+    <div id="div012" class="content" title="Ajuda económica estrangeira">
+        <h3>01.2.1 - Ajuda económica aos países em desenvolvimento e países em transição</h3>
+        <h4>Administração da cooperação económica com os países e os países em transição;</h4>
+        <p>- Exploração de missões de ajuda econômica credenciados para governos estrangeiros; operação ou apoio de programas de assistência técnica, programas de formação e de bolsas de estudo e bolsas de estudo;</p>
+        <p>- Ajuda económica sob a forma de subvenções (em dinheiro ou em espécie) ou de empréstimos (independentemente de juros cobrados).</p>
+        <p>Exclui: contribuições para fundos de desenvolvimento económico administrados por organizações internacionais ou regionais (<a href="012" class="help">01.2.2</a>); ajuda militar a países estrangeiros (<a href="023" class="help">02.3.0</a>).</p>
+        <h3>01.2.2 - Ajuda econômica encaminhado através de organizações internacionais</h3>
+        <h4>A administração de ajuda econômica encaminhado através de organizações internacionais;</h4>
+        <p>- contribuições em dinheiro ou em espécie para fundos de desenvolvimento económico administrados por organizações multinacionais internacionais, regionais ou outras.</p>
+        <p>Exclui: auxílio às operações de manutenção da paz internacionais (<a href="023" class="help">02.3.0</a>).</p>
+    </div>
+    <div id="div013" class="content" title="Serviços gerais">
+        <h3>01.3.1 - Serviços gerais de pessoal</h3>
+        <h4>Administração e gestão de serviços gerais de pessoal, incluindo o desenvolvimento e implementação de políticas e procedimentos gerais de pessoal que abrangem seleção, promoção, métodos de notação, a descrição, avaliação e classificação de postos de trabalho, a administração dos regulamentos da função pública e outras questões similares.</h4>
+        <p>Exclui: administração e serviços relacionados com uma função específica pessoal (classificados de acordo com a função).</p>
+        <h3>01.3.2 - Planejamento geral e serviços estatísticos</h3>
+        <h4>Administração e gestão de serviços globais de planeamento económico e social e dos serviços estatísticos globais, incluindo a formulação, coordenação e acompanhamento dos planos e programas económicos e sociais globais e de planos e programas estatísticos globais.</h4>
+        <p>Exclui: serviços de planejamento econômico e social e serviços estatísticos relacionados com uma função específica (classificados de acordo com a função).</p>
+        <h3>01.3.3 - Outros serviços gerais</h3>
+        <h4>Administração e exploração de outros serviços gerais, tais como fornecimento centralizado e compra de serviços, manutenção e armazenamento de registros do governo e arquivos, a operação de propriedade do governo ou edifícios ocupados, piscinas centrais para veículos motorizados, operados escritórios de impressão do governo, serviços de informática e processamento de dados centralizados, etc .</h4>
+        <p>Exclui: outros serviços gerais relacionados com uma função específica (classificados de acordo com a função).</p>
+    </div>
+    <div id="div014" class="content" title="A pesquisa básica">
+        <h3>01.4.0 - A pesquisa básica</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos em pesquisa básica;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação de base realizada por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa aplicada e desenvolvimento experimental (classificadas por função).</p>
+    </div>
+    <div id="div015" class="content" title="Serviços públicos gerais de I & D">
+        <h3>01.5.0 - Serviços públicos gerais de I & D</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionadas com serviços públicos gerais;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionadas com serviços públicos gerais efetuadas por órgãos não-governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div016" class="content" title="Geral n.e. serviços públicos">
+        <h3>01.6.0 - Geral n.e. serviços públicos</h3>
+        <h4>Administração, operação ou manutenção dos serviços públicos gerais tais como o registo dos eleitores, à realização de eleições e referendos, a administração de não-auto-governar e confiar territórios, etc.</h4>
+        <p>Inclui: serviços públicos gerais que não podem ser atribuídos a (<a href="011" class="help">01.1</a>), (<a href="012" class="help">01.2</a>), (<a href="013" class="help">01.3</a>), (<a href="014" class="help">01.4</a>) ou (<a href="015" class="help">01.5</a>).</p>
+        <p>Exclui: as operações de dívida pública (<a href="017" class="help">01.7</a>); transferências de carácter geral entre diferentes níveis de governo (<a href="018" class="help">01.8</a>).</p>
+    </div>
+    <div id="div017" class="content" title="Operações de dívida pública">
+        <h3>01.7.0 - Operações de dívida pública</h3>
+        <h4>Os pagamentos de juros e despesas de subscrição e flutuante empréstimos do governo.</h4>
+        <p>Exclui: despesas administrativas de gestão da dívida pública (<a href="011" class="help">01.1.2</a>).</p>
+    </div>
+    <div id="div018" class="content" title="Transferências de carácter geral entre diferentes níveis de governo">
+        <h3>01.8.0 - Transferências de carácter geral entre diferentes níveis de governo</h3>
+        <h4>Transferências entre diferentes níveis de governo que são de caráter geral e não atribuídos a uma função particular.</h4>
+        <p>2Defesa</p>
+    </div>
+    <div id="div021" class="content" title="A defesa militar">
+        <h3>02.1.0 - A defesa militar</h3>
+        <h4>Administração de negócios e serviços de defesa militar;</h4>
+        <p>- Funcionamento das forças de terra, mar, ar e espaço de defesa; operação de engenharia, transporte, comunicação, inteligência, pessoal e outras forças de defesa não-combatentes; operação ou suporte de reserva e forças auxiliares do estabelecimento de defesa.</p>
+        <p>Inclui: escritórios de adidos militares estacionadas no estrangeiro; hospitais de campanha.</p>
+        <p>Exclui: missões de ajuda militares (<a href="023" class="help">02.3.0</a>); hospitais de base (<a href="073" class="help">07.3</a>); escolas militares e colégios onde se assemelham aos currículos das instituições civis, apesar de atendimento pode ser limitado ao pessoal militar e suas famílias (<a href="091" class="help">09.1</a>), (<a href="092" class="help">09.2</a>), (<a href="093" class="help">09.3</a>) ou (<a href="094" class="help">09.4</a>); os regimes de pensões dos militares (<a href="102" class="help">10.2</a>).</p>
+    </div>
+    <div id="div022" class="content" title="Defesa civil">
+        <h3>02.2.0 - Defesa civil</h3>
+        <h4>Administração de negócios e serviços de defesa civil; formulação de planos de contingência; organização de exercícios envolvendo instituições civis e populações;</h4>
+        <p>- Operação ou apoio das forças de defesa civil.</p>
+        <p>Exclui: serviços de protecção civil (<a href="032" class="help">03.2.0</a>); compra e armazenamento de alimentos, equipamentos e outros suprimentos para uso de emergência em caso de desastres em tempo de paz (<a href="109" class="help">10.9.0</a>).</p>
+    </div>
+    <div id="div023" class="content" title="Ajuda militar estrangeira">
+        <h3>02.3.0 - Ajuda militar estrangeira</h3>
+        <h4>A administração de ajuda militar e operação de missões de ajuda militares acreditados para governos estrangeiros ou ligados a organizações militares internacionais ou alianças;</h4>
+        <p>- Ajuda militar sob a forma de subvenções (em dinheiro ou em espécie), empréstimos (independentemente de juros cobrados) ou o empréstimo de equipamentos; contribuições para as forças de paz internacionais, incluindo a cessão de mão de obra.</p>
+    </div>
+    <div id="div024" class="content" title="Defesa de I & D">
+        <h3>02.4.0 - Defesa de I & D</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionada com a defesa;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionada com a defesa realizada por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div025" class="content" title="N.e. Defesa">
+        <h3>02.5.0 - N.e. Defesa</h3>
+        <h4>Administração, operação ou apoio de atividades como formulação, administração, coordenação e acompanhamento das políticas gerais, planos, programas e orçamentos relativos à defesa; preparação e aplicação da legislação relativa à defesa; produção e disseminação de informações gerais, documentação técnica e estatísticas sobre a defesa; etc.</h4>
+        <p>Inclui: os assuntos e serviços que não podem ser atribuídos a (<a href="021" class="help">02.1</a>), (<a href="022" class="help">02.2</a>), (<a href="023" class="help">02.3</a>) ou (<a href="024" class="help">02.4</a>) de defesa.</p>
+        <p>Exclui: administração de assuntos de veteranos de guerra (<a href="102" class="help">10.2</a>).</p>
+    </div>
+    <div id="div031" class="content" title="Os serviços policiais">
+        <h3>03.1.0 - Os serviços policiais</h3>
+        <h4>Administração de negócios e serviços de polícia, incluindo registro de estrangeiro, a emissão de trabalho e documentos de viagem para os imigrantes, manutenção de registros de prisões e estatísticas relacionadas com o trabalho da polícia, regulação e controlo de tráfego rodoviário, prevenção do contrabando e controlo da pesca em alto mar e oceano;</h4>
+        <p>- Funcionamento das forças policiais regulares e auxiliares, de porta, os guardas de fronteira e costa, e de outras forças especiais da polícia mantidos por autoridades públicas; funcionamento dos laboratórios de polícia; operação ou apoio a programas de formação da polícia.</p>
+        <p>Inclui: guardas de trânsito.</p>
+        <p>Exclui: academias de polícia oferecem ensino geral, além de formação da polícia (<a href="091" class="help">09.1</a>), (<a href="092" class="help">09.2</a>), (<a href="093" class="help">09.3</a>) ou (<a href="094" class="help">09.4</a>).</p>
+    </div>
+    <div id="div032" class="content" title="Serviços de protecção contra incêndios">
+        <h3>03.2.0 - Serviços de protecção contra incêndios</h3>
+        <h4>A administração de anti-incêndio e de combate a incêndios assuntos e serviços;</h4>
+        <p>- Funcionamento das brigadas regulares e auxiliares de incêndio e de outros serviços de prevenção de incêndios e de combate a incêndios mantidos por autoridades públicas; operação ou apoio de programas de treinamento de combate a incêndios de prevenção de incêndio e.</p>
+        <p>Inclui: serviços de protecção civil, como resgate de montanha, praia vigilância, evacuação de áreas inundadas, etc.</p>
+        <p>Exclui: defesa civil (<a href="022" class="help">02.2.0</a>); forças especialmente treinadas e equipadas para combater ou prevenir incêndios florestais (<a href="042" class="help">04.2.2</a>).</p>
+    </div>
+    <div id="div033" class="content" title="Tribunais">
+        <h3>03.3.0 - Tribunais</h3>
+        <h4>Administração, operação ou suporte de tribunais civis e criminais e do sistema judicial, incluindo a aplicação de multas e acordos legais impostas pelos tribunais e operação de sistemas de liberdade condicional e liberdade condicional;</h4>
+        <p>- Representação e consultoria jurídica em nome do governo ou em nome de terceiros fornecidos pelo governo em dinheiro ou em serviços.</p>
+        <p>Inclui: tribunais administrativos, os provedores de justiça e afins.</p>
+        <p>Administração penitenciária (<a href="034" class="help">03.4.0</a>): Exclui.</p>
+    </div>
+    <div id="div034" class="content" title="Prisões">
+        <h3>03.4.0 - Prisões</h3>
+        <h4>Administração, operação ou suporte de prisões e outros locais de detenção ou reabilitação de criminosos, tais como fazendas de prisão, asilos, reformatórios, reformatórios, asilos para criminosos insanos, etc.</h4>
+    </div>
+    <div id="div035" class="content" title="R & D Segurança e ordem pública">
+        <h3>03.5.0 - R & D Segurança e ordem pública</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionadas com a ordem ea segurança pública;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionadas com a ordem pública ea segurança empreendida por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div036" class="content" title="Ordem pública e segurança n.e.">
+        <h3>03.6.0 - Ordem pública e segurança n.e.</h3>
+        <h4>Administração, operação ou apoio de atividades como formulação, administração, coordenação e acompanhamento das políticas gerais, planos, programas e orçamentos relativos à ordem e segurança pública; preparação e aplicação da legislação e normas para a prestação de ordem e segurança pública; produção e disseminação de informações gerais, documentação técnica e estatísticas sobre a ordem ea segurança pública.</h4>
+        <p>Inclui: ordem pública e assuntos de segurança e serviços que não podem ser atribuídos a (<a href="031" class="help">03.1</a>), (<a href="032" class="help">03.2</a>), (<a href="033" class="help">03.3</a>), (<a href="034" class="help">03.4</a>) ou (<a href="035" class="help">03.5</a>).</p>
+    </div>
+    <div id="div041" class="content" title="Gerais econômicas, comerciais e trabalhistas assuntos">
+        <h3>04.1.1 - Assuntos económicos e comerciais gerais</h3>
+        <h4>A administração de assuntos económicos e comerciais gerais e serviços, incluindo assuntos comerciais estrangeiros gerais; formulação e implementação de políticas econômicas e comerciais gerais; ligação entre os diferentes órgãos do governo e entre o governo e as empresas;</h4>
+        <p>- Regulação ou apoio a atividades econômicas e comerciais gerais, como a exportação e comércio de importação como um todo, de commodities e de ações mercados, controles gerais de renda, atividades de promoção comercial gerais, regulamento geral dos monopólios e outras restrições sobre o comércio ea entrada no mercado, etc .; supervisão do setor bancário;</p>
+        <p>- Operação ou apoio de instituições que lidam com patentes, marcas, direitos autorais, registro de empresa, previsão do tempo, os padrões hidrológicos, pesquisas, levantamentos geodésicos, etc .;</p>
+        <p>- Subvenções, empréstimos ou subsídios para promover políticas e programas económicos e comerciais em geral.</p>
+        <p>Inclui: educação e defesa do consumidor.</p>
+        <p>Exclui: assuntos económicos e comerciais de um determinado setor (classificado para (<a href="042" class="help">04.2</a>) a (<a href="047" class="help">04.7</a>) conforme o caso).</p>
+        <h3>04.1.2 - Assuntos de trabalho geral</h3>
+        <h4>Administração dos assuntos trabalhistas e serviços gerais; formulação e implementação de políticas de trabalho gerais; de supervisão e de regulação das condições de trabalho (horas de trabalho, salários, segurança, etc.); ligação entre os diferentes órgãos do governo e entre governo e, organizações empresariais e trabalhistas globais industriais;</h4>
+        <p>- Operação ou apoio a programas gerais ou medidas que favoreçam a mobilidade do trabalho, para reduzir o sexo, raça, idade e outras discriminações, para reduzir a taxa de desemprego nas regiões em dificuldades ou subdesenvolvidos, para promover o emprego dos grupos desfavorecidos ou outras caracterizadas por um elevado desemprego taxas, etc .; operação de trocas de trabalho; operação ou apoio de serviços de arbitragem e de mediação;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos trabalhistas e serviços gerais;</p>
+        <p>- Subvenções, empréstimos ou subsídios para promover políticas e programas gerais de trabalho.</p>
+        <p>- Exclui: questões trabalhistas de um determinado setor (classificado para (<a href="042" class="help">04.2</a>) a (<a href="047" class="help">04.7</a>) conforme o caso); prestação de protecção social sob a forma de prestações pecuniárias e prestações em espécie a pessoas que estão desempregadas (<a href="105" class="help">10.5.0</a>).</p>
+    </div>
+    <div id="div042" class="content" title="Agricultura, silvicultura, pesca e caça">
+        <h3>04.2.1 - Agricultura</h3>
+        <h4>Administração de negócios e serviços agrícolas; conservação, recuperação ou ampliação de terras aráveis; reforma agrária e assentamento; supervisão e regulação do sector agrícola;</h4>
+        <p>- A construção ou operação de sistemas de controle de inundações, irrigação e drenagem, incluindo subsídios, empréstimos ou subsídios para essas obras;</p>
+        <p>- Operação ou apoio a programas ou regimes para estabilizar ou melhorar os preços agrícolas e os rendimentos agrícolas; operação ou apoio de serviços de extensão ou serviços veterinários para os agricultores, serviços de controle de pragas, serviços de inspecção cultura e serviços de classificação de culturas;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos agrícolas e de serviços;</p>
+        <p>- Compensação, subvenções, empréstimos ou subsídios aos agricultores no âmbito das actividades agrícolas, incluindo os pagamentos de restringir ou incentivar produção de uma cultura específica ou para permitir que a terra permanecer sem cultivo.</p>
+        <p>Exclui: projetos de desenvolvimento multi-purpose (<a href="047" class="help">04.7.4</a>).</p>
+        <h3>04.2.2 - Silvicultura</h3>
+        <h4>Administração dos assuntos e dos serviços florestais; conservação, ampliação e exploração racionalizada das reservas florestais; supervisão e regulação das operações florestais e emissão de licenças de árvore do abate;</h4>
+        <p>- Operação ou apoio ao trabalho de reflorestamento, controle de pragas e doenças, combate a incêndios e prevenção de incêndios florestais e de serviços de serviços de extensão para operadores florestais;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e dos serviços florestais;</p>
+        <p>- Subvenções, empréstimos ou subsídios de apoio às actividades florestais comerciais.</p>
+        <p>Inclui: culturas florestais, além de madeira.</p>
+        <h3>04.2.3 - Caça e Pesca (CS)</h3>
+        <h4>Esta categoria inclui tanto a pesca comercial e caça, a pesca ea caça esportiva. Os pesca e caça assuntos e serviços listados abaixo referem-se a atividades que acontecem fora dos parques e reservas naturais.</h4>
+        <p>- Administração de pesca e caça assuntos e serviços; proteção, propagação e exploração racionalizada dos recursos haliêuticos e faunísticos; supervisão e regulação da pesca de água doce, pesca costeira, pesca oceânica, criação de peixes, caça dos animais selvagens e emissão de licenças de pesca e caça;</p>
+        <p>- Operação ou suporte de piscicultura, serviços de extensão, atividades de estocagem ou de abate, etc .;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre pesca e caça assuntos e serviços;</p>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à pesca comercial e de atividades de caça, incluindo a construção ou exploração de viveiros.</p>
+        <p>Exclui: o controle da pesca em alto mar e oceano (<a href="031" class="help">03.1.0</a>); administração, operação ou suporte de parques e reservas (<a href="054" class="help">05.4.0</a>) naturais.</p>
+    </div>
+    <div id="div043" class="content" title="Combustível e energia">
+        <h3>04.3.1 - Carvão e outros combustíveis minerais sólidos (CS)</h3>
+        <h4>Esta categoria inclui os carvões de todos os tipos, de lenhite e turfa, independentemente do método utilizado na sua extração ou beneficiamento ea conversão desses combustíveis para outras formas, como coque ou gás.</h4>
+        <p>- A administração de assuntos e serviços combustíveis minerais sólidos; conservação, descoberta, desenvolvimento e exploração racionalizada dos recursos de combustíveis minerais sólidos; supervisão e regulação da extracção, transformação, distribuição e utilização de combustíveis minerais sólidos;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e serviços combustíveis minerais sólidos;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a indústria de combustível mineral sólido eo coque, briquetes ou indústrias de gás manufaturados.</p>
+        <p>Exclui: assuntos sólidos de transporte de combustível mineral (classificados para a classe apropriada de grupo <a href="045" class="help">04.5</a>).</p>
+        <h3>04.3.2 - Petróleo e gás natural (CS)</h3>
+        <h4>Esta categoria inclui o gás natural, gases de petróleo liquefeitos e gases de refinaria, óleo de poços ou outras fontes, como xisto ou areias betuminosas e da distribuição de gás de cidade, independentemente da sua composição.</h4>
+        <p>- Administração de petróleo e gás natural assuntos e serviços; conservação, descoberta, desenvolvimento e exploração racional dos recursos de petróleo e gás natural; supervisão e regulação da extracção, transformação, distribuição e utilização de petróleo e gás natural;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre petróleo e gás natural assuntos e serviços;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a indústria do petróleo e extração de petróleo bruto indústria de refinação e líquidos relacionados e produtos gasosos.</p>
+        <p>Exclui: petróleo ou assuntos de transporte de gás (classificado para a classe apropriada de grupo <a href="045" class="help">04.5</a>).</p>
+        <h3>04.3.3 - Combustível nuclear</h3>
+        <h4>Administração de negócios e serviços de combustível nuclear; conservação, descoberta, desenvolvimento e exploração racionalizada dos recursos materiais nucleares; supervisão e regulação da extração e processamento de materiais de combustível nuclear e de fabricação, distribuição e utilização de elementos de combustível nuclear;</h4>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e serviços de combustível nuclear;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a indústria de mineração de materiais nucleares e as indústrias que processam esses materiais.</p>
+        <p>Exclui: assuntos de transporte de combustível nuclear (classificados para a classe apropriada de grupo <a href="045" class="help">04.5</a>); eliminação dos resíduos radioactivos (<a href="051" class="help">05.1.0</a>).</p>
+        <h3>04.3.4 - Outros combustíveis</h3>
+        <h4>Administração de negócios e serviços que envolvem combustíveis como o álcool, madeira e resíduos, bagaço e outros combustíveis não-comerciais;</h4>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre a disponibilidade, a produção e utilização desses combustíveis;</p>
+        <p>- Subvenções, empréstimos ou subsídios para promover a utilização desses combustíveis para a produção de energia.</p>
+        <p>Exclui: manejo florestal (<a href="042" class="help">04.2.2</a>); vento e calor solar (<a href="043" class="help">04.3.5</a>) ou (<a href="043" class="help">04.3.6</a>); recursos geotérmicos (<a href="043" class="help">04.3.6</a>).</p>
+        <h3>04.3.5 - Electricidade (CS)</h3>
+        <h4>Esta classe abrange ambas as fontes tradicionais de energia elétrica, tais como fontes termais ou hidrelétricas e fontes mais recentes, como a eólica ou de calor solar.</h4>
+        <p>- A administração de assuntos e serviços de energia elétrica; conservação, desenvolvimento e exploração racionalizada do fornecimento de electricidade; supervisão e regulação da geração, transmissão e distribuição de energia elétrica;</p>
+        <p>- A construção ou operação de sistemas de abastecimento de electricidade não-corporativo do tipo;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e serviços de energia elétrica;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a indústria de fornecimento de electricidade, incluindo os gastos para a construção de barragens e outras obras destinadas principalmente para fornecer eletricidade.</p>
+        <p>Exclui: energia não elétrica produzida pelo vento ou calor solar (<a href="043" class="help">04.3.6</a>).</p>
+        <h3>04.3.6 - Energia não-elétrico</h3>
+        <h4>Administração de negócios e serviços que dizem respeito principalmente a produção, distribuição e utilização do calor sob a forma de vapor, água quente ou ar quente de energia não-elétricos;</h4>
+        <p>- A construção ou operação de sistemas não-corporativo do tipo de fornecimento de energia não-elétrica;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre a disponibilidade, a produção e utilização de energia não-elétrica;</p>
+        <p>- Subvenções, empréstimos ou subsídios para promover o uso de energia não-elétrico.</p>
+        <p>Inclui: recursos geotérmicos; energia não elétrica produzida pelo vento ou calor solar.</p>
+    </div>
+    <div id="div044" class="content" title="Mineração, indústria e construção">
+        <h3>04.4.1 - Mineração de outros do que os combustíveis minerais recursos minerais (CS)</h3>
+        <h4>Esta categoria inclui os minerais metalíferas, areia, argila, pedra, químicos e adubos minerais, sal, pedras preciosas, amianto, gesso, etc.</h4>
+        <p>- Administração de mineração e recursos minerais assuntos e serviços; conservação, descoberta, desenvolvimento e exploração racional dos recursos minerais; supervisão e regulação de prospecção, exploração, comercialização e outros aspectos da produção mineral;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre a mineração e recursos minerais assuntos e serviços;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar as atividades de mineração comerciais.</p>
+        <p>Inclui: emissão de licenças e concessões, regulação de taxas de produção, inspeção de minas para a conformidade com os regulamentos de segurança, etc.</p>
+        <p>Exclui: de carvão e outros combustíveis sólidos (<a href="043" class="help">04.3.1</a>), petróleo e gás natural (<a href="043" class="help">04.3.2</a>) e materiais de combustível nuclear (<a href="043" class="help">04.3.3</a>).</p>
+        <h3>04.4.2 - Fabrico</h3>
+        <h4>Administração de negócios e serviços de fabricação; desenvolvimento, expansão ou melhoria de fabricação; supervisão e regulação do estabelecimento e operação de plantas industriais; articulação com as associações de fabricantes e outras organizações interessadas nos assuntos e serviços de fabricação;</h4>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre a produção e os produtos fabricados;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar as empresas de manufatura.</p>
+        <p>Inclui: inspecção das instalações de fabrico de conformidade com as normas de segurança, a protecção dos consumidores contra produtos perigosos, etc.</p>
+        <p>Exclui: os assuntos e serviços relativos a indústria de processamento de carvão (<a href="043" class="help">04.3.1</a>), a indústria de refinaria de petróleo (<a href="043" class="help">04.3.2</a>) ou a indústria de combustível nuclear (<a href="043" class="help">04.3.3</a>).</p>
+        <h3>04.4.3 - Construção</h3>
+        <h4>Administração de negócios e serviços de construção; supervisão da indústria da construção; desenvolvimento e regulação de normas de construção;</h4>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e serviços de construção.</p>
+        <p>Inclui: emissão de certificados que permitem a ocupação, a inspecção dos locais de construção para conformidade com os regulamentos de segurança, etc.</p>
+        <p>Exclui: subvenções, empréstimos e subsídios para a construção de habitações, edifícios industriais, ruas, serviços públicos, equipamentos culturais, etc. (classificados de acordo com a função); desenvolvimento e regulamentação dos padrões de habitação (<a href="061" class="help">06.1.0</a>).</p>
+    </div>
+    <div id="div045" class="content" title="Transporte">
+        <h3>04.5.1 - Transporte rodoviário</h3>
+        <h4>(Estradas, pontes, túneis, parques de estacionamento, terminais de ônibus, etc.) administração dos assuntos e serviços relacionados à operação, uso, construção e manutenção de sistemas de transporte rodoviário e instalações;</h4>
+        <p>- Supervisão e regulamentação dos utentes (veículos e cartas de condução, inspeção de segurança do veículo, especificações de tamanho e de carga para transporte de passageiros eo transporte rodoviário de mercadorias, a regulamentação do tempo de trabalho dos motoristas de ônibus, autocarros e camiões, etc.), de operações do sistema de transporte rodoviário (concessão de franquias, a aprovação das tarifas de fretes e tarifas de passageiros e de horas e frequência do serviço, etc.) e de construção de estradas e manutenção;</p>
+        <p>- Construção ou exploração de não-corporativo do tipo sistemas de transporte rodoviário e instalações;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre as operações do sistema de transporte rodoviário e sobre as atividades de construção de estradas;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a operação, construção, manutenção ou modernização dos sistemas de transporte rodoviário e instalações.</p>
+        <p>Inclui: rodovias, vias urbanas, ruas, ciclovias e caminhos pedonais.</p>
+        <p>Exclui: controle de tráfego rodoviário (<a href="031" class="help">03.1.0</a>); subvenções, empréstimos e subsídios para os fabricantes de veículos rodoviários (<a href="044" class="help">04.4.2</a>); limpeza de ruas (<a href="051" class="help">05.1.0</a>); construção de diques de contenção de ruído, cercas e outras instalações anti-ruído, incluindo o recapeamento de seções de rodovias urbanas com superfícies redução de ruído (<a href="053" class="help">05.3.0</a>); iluminação de rua (<a href="064" class="help">06.4.0</a>).</p>
+        <h3>04.5.2 - Transporte de água</h3>
+        <h4>Administração de negócios e serviços relacionados à operação, uso, construção e manutenção de interiores, sistemas de transporte de água costeiros e oceânicos e instalações (portos, docas, auxílios à navegação e equipamentos, canais, pontes, túneis, canais, quebra-mares, cais, cais, terminais, etc);</h4>
+        <p>- Supervisão e regulação dos utentes dos transportes água (registo, licenciamento e inspecção dos navios e tripulações, regulamentos relativos à segurança dos passageiros e de mercadorias de segurança, etc.), das operações do sistema de transporte de água (concessão de franquias, a aprovação das tarifas de transporte de mercadorias e transporte de passageiros e de horas e frequência do serviço, etc.) e do transporte de água instalação de construção e manutenção;</p>
+        <p>- Construção ou operação de sistemas de transporte de água não-corporativo do tipo e instalações (tais como ferries);</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre as operações do sistema de transporte de água e sobre as atividades de construção de instalações de transporte de água;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a operação, construção, manutenção ou modernização dos sistemas de transporte de água e instalações.</p>
+        <p>Inclui: rádio-ajudas e de navegação por satélite; resgate de emergência e serviços de reboque.</p>
+        <p>Exclui: subvenções, empréstimos e subsídios ao construtores navais (<a href="044" class="help">04.4.2</a>).</p>
+        <h3>04.5.3 - Transporte ferroviário</h3>
+        <h4>Administração de negócios e serviços relacionados à operação, uso, construção ou manutenção de sistemas de transporte ferroviário e instalações (roadbeds ferroviárias, terminais, túneis, pontes, aterros, cortes, etc.);</h4>
+        <p>- supervisão e regulamentação dos usuários de transporte ferroviário (rolando condição de ações, de estabilidade leito da estrada, segurança de passageiros, segurança do transporte de mercadorias, etc.), de operações do sistema de transporte ferroviário (concessão de franquias, de aprovação das tarifas de carga e de passageiros e tarifas de horas e frequência do serviço , etc.) e de construção e de manutenção ferroviária;</p>
+        <p>- Construção ou exploração de não-corporativo do tipo sistemas de transporte ferroviário e instalações;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre as operações do sistema de transporte ferroviário e sobre as atividades de construção ferroviária;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a operação, construção, manutenção ou modernização dos sistemas de transporte ferroviário e instalações.</p>
+        <p>Inclui: linha longa e sistemas de transporte ferroviário interurbano, sistemas de transporte ferroviário de trânsito rápido urbanas e sistemas de transporte ferroviário de rua; aquisição e manutenção de material circulante.</p>
+        <p>Exclui: subvenções, empréstimos e subsídios aos construtores de material circulante (<a href="044" class="help">04.4.2</a>); construção de diques de contenção de ruído, cercas e outras instalações anti-ruído, incluindo o recapeamento de seções de estradas de ferro com redução de ruído superfícies (<a href="053" class="help">05.3.0</a>).</p>
+        <h3>04.5.4 - Transporte aéreo</h3>
+        <h4>Administração de negócios e serviços relacionados à operação, uso, construção e manutenção de sistemas de transporte aéreo e instalações (aeroportos, pistas de aeroportos, terminais, hangares, aparelhos e equipamento de navegação, instalações de controle de ar, etc.);</h4>
+        <p>- Supervisão e regulamentação dos utilizadores do transporte aéreo (registo, licenciamento e inspecção de aeronaves, pilotos, tripulações, pessoal de terra, os regulamentos relativos à segurança dos passageiros, investigação de acidentes de transporte aéreo, etc.), das operações do sistema de transporte aéreo (atribuição de rotas, aprovação das tarifas de frete e transporte de passageiros e de freqüência e níveis de serviço, etc.) e do transporte aéreo facilidade de construção e manutenção;</p>
+        <p>- Construção ou exploração de não-corporativo do tipo de serviços e facilidades de transporte aéreo público;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre as operações do sistema de transporte aéreo e na construção de instalações de transporte aéreo;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a operação, construção, manutenção ou modernização dos sistemas de transporte aéreo e instalações.</p>
+        <p>Inclui: rádio-ajudas e de navegação por satélite; serviços de salvamento de emergência; programada e serviços de carga e de passageiros não regulares; regulação e controle de vôo por particulares.</p>
+        <p>Exclui: subvenções, empréstimos e subsídios aos fabricantes de aeronaves (<a href="044" class="help">04.4.2</a>).</p>
+        <h3>04.5.5 - Pipeline e outros transportes</h3>
+        <h4>Administração de negócios e serviços relacionados à operação, uso, construção e manutenção de gasodutos e outros sistemas de transporte (funiculares, os teleféricos, teleféricos, etc.);</h4>
+        <p>- Supervisão e regulação dos usuários do gasoduto e outros sistemas de transporte (registo, licenciamento, inspeção de equipamentos, as habilidades do operador e formação; normas de segurança, etc.); de gasodutos e outras operações de sistemas de transporte (concessão de franquias, a fixação de tarifas, freqüência e níveis de serviço, etc.) e de gasodutos e outros sistemas de transporte construção e manutenção;</p>
+        <p>- Construção ou exploração de não-corporativo do tipo gasoduto e outros sistemas de transporte;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre a operação e construção de gasodutos e outros sistemas de transporte;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a operação, construção, manutenção ou modernização de gasodutos e outros sistemas de transporte.</p>
+    </div>
+    <div id="div046" class="content" title="Comunicação">
+        <h3>04.6.0 - Comunicação</h3>
+        <h4>Administração de negócios e serviços em matéria de construção, ampliação, melhoria, operação e manutenção de sistemas de comunicação (correio, telefone, telégrafo, sem fio e sistemas de comunicação por satélite);</h4>
+        <p>- Regulamentação das operações do sistema de comunicação (concessão de franquias; atribuição de frequências, a especificação dos mercados para ser servido e tarifas a serem cobradas, etc.);</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e serviços de comunicação;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a construção, operação, manutenção ou modernização dos sistemas de comunicação.</p>
+        <p>Exclui: auxílios de rádio e de navegação por satélite para o transporte de água (<a href="045" class="help">04.5.2</a>) e transporte aéreo (<a href="045" class="help">04.5.4</a>); sistemas de transmissão de rádio e televisão (<a href="083" class="help">08.3.0</a>).</p>
+    </div>
+    <div id="div047" class="content" title="Outras indústrias">
+        <h3>04.7.1 - Comércio, distribuição, armazenamento e armazenagem</h3>
+        <h4>Administração de negócios e serviços relativos ao comércio e à indústria de armazenamento e armazenagem;</h4>
+        <p>- Supervisão e regulação do comércio por grosso ea retalho (licenciamento, práticas de vendas, a rotulagem dos alimentos embalados e outros bens destinados ao consumo doméstico, inspeção de escalas e outros instrumentos de pesagem, etc.) e da indústria de armazenamento e armazenagem (incluindo licenciamento e controlo de armazéns ligados-governamentais, etc.);</p>
+        <p>- Administração de controlo e de racionamento de esquemas de preços que operam através de varejistas ou atacadistas, independentemente do tipo de bens envolvidos ou que se destinem ao consumo; administração e fornecimento de alimentos e outros tais subsídios para o público em geral;</p>
+        <p>- Produção e divulgação de informação ao mercado e ao público sobre os preços, na disponibilidade de mercadorias e sobre outros aspectos do comércio e do setor de armazenamento e armazenagem; compilação e publicação de estatísticas sobre o comércio e à indústria de armazenamento e armazenagem;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar o comércio distributiva e para a indústria de armazenamento e armazenamento.</p>
+        <p>Exclui: administração de preço e outros controles aplicados ao produtor (classificados de acordo com a função); alimentos e outros tais subsídios aplicáveis ??a grupos específicos da população ou indivíduos (10).</p>
+        <h3>04.7.2 - Hotéis e restaurantes</h3>
+        <h4>Administração de negócios e serviços em matéria de construção, ampliação, melhoria, operação e manutenção de hotéis e restaurantes;</h4>
+        <p>- Supervisão e regulação das operações de hotelaria e restauração (normas que regulamentam os preços, práticas de limpeza e de vendas, hotel e restaurante de licenciamento, etc.);</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos de hotelaria e restauração e serviços;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a construção, operação, manutenção ou modernização de hotéis e restaurantes.</p>
+        <h3>04.7.3 - Turismo</h3>
+        <h4>Administração de negócios e serviços turísticos; promoção e desenvolvimento do turismo; ligação com os transportes, hotelaria e restauração indústrias e outras indústrias que beneficiam da presença de turistas;</h4>
+        <p>- Exploração de postos de turismo no país e no exterior, etc .; organização de campanhas publicitárias, incluindo a produção e divulgação de material promocional e semelhantes;</p>
+        <p>- Compilação e publicação de estatísticas sobre o turismo.</p>
+        <h3>04.7.4 - Projetos de desenvolvimento multi-usos (CS)</h3>
+        <h4>Projetos de desenvolvimento multi-usos tipicamente consistem de instalações integradas para a geração de energia, controle de enchentes, irrigação, navegação e recreação.</h4>
+        <p>- A administração de assuntos e serviços relativos à construção, extensão, aperfeiçoamento, operação e manutenção de projetos multi-uso;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre multiusos assuntos e serviços de projetos de desenvolvimento;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a construção, operação, manutenção ou atualização de projetos de desenvolvimento multi-usos;</p>
+        <p>Exclui: projectos com uma função principal e outras funções que são secundário (classificados de acordo com a função principal).</p>
+    </div>
+    <div id="div048" class="content" title="Assuntos económicos de P & D">
+        <h3>04.8.1 - Assuntos R & D Geral económicos, comerciais e trabalhistas</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionadas com assuntos económicos, comerciais e trabalhistas gerais;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental, relacionadas com assuntos comerciais e trabalhistas econômicas gerais efetuadas por órgãos não-governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+        <h3>04.8.2 - R & D Agricultura, silvicultura, pesca e caça</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionada com a agricultura, silvicultura, pesca e caça;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionada com a agricultura, silvicultura, pesca e caça empreendida por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+        <h3>04.8.3 - R & D de combustível e energia</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionadas com combustível e energia;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionadas com combustível e energia realizadas por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+        <h3>04.8.4 - R & D mineração, indústria e construção</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionadas à mineração, indústria e construção;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionadas à mineração, indústria e construção realizados por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+        <h3>04.8.5 - Transporte de R & D</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionada ao transporte;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionadas com o transporte realizado por organizações não-governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+        <h3>04.8.6 - Comunicação R & D</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionada com a comunicação;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionada com a comunicação realizada por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+        <h3>04.8.7 - P & D Outras indústrias</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionadas com outros sectores;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionado a outros setores efetuadas por órgãos não-governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Inclui: a distribuição, armazenamento e armazenagem; hotéis e restaurantes; turismo e desenvolvimento multi-purpose projetos.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div049" class="content" title="Assuntos económicos n.e.">
+        <h3>04.9.0 - Assuntos económicos n.e.</h3>
+        <h4>Administração, operação ou atividades de apoio relativamente aos assuntos económicos gerais e sectoriais que não podem ser atribuídos a (04.1), (04.2), (04.3), (04.4), (04.5), (04.6), (04.7) ou (04.8).</h4>
+    </div>
+    <div id="div051" class="content" title="Gestão de resíduos">
+        <h3>05.1.0 - Gestão de resíduos</h3>
+        <h4>Administração, supervisão, inspeção, operação ou suporte de recolha de resíduos, sistemas de tratamento e eliminação de resíduos;</h4>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a operação, construção, manutenção ou modernização de tais sistemas.</p>
+        <p>Inclui: recolha, tratamento e eliminação de resíduos nucleares.</p>
+    </div>
+    <div id="div052" class="content" title="Gestão das águas residuais">
+        <h3>05.2.0 - Gestão das águas residuais</h3>
+        <h4>Administração, supervisão, inspeção, operação ou manutenção das redes de esgotos e tratamento de águas residuais;</h4>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a operação, construção, manutenção ou modernização de tais sistemas.</p>
+    </div>
+    <div id="div053" class="content" title="Redução da poluição">
+        <h3>05.3.0 - Redução da poluição</h3>
+        <h4>Administração, supervisão, inspeção, operação ou apoio das actividades relativas à redução e controlo da poluição;</h4>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar as atividades relacionadas com a redução e controlo da poluição.</p>
+    </div>
+    <div id="div054" class="content" title="Protecção da biodiversidade e paisagem">
+        <h3>05.4.0 - Protecção da biodiversidade e paisagem</h3>
+        <h4>Administração, supervisão, inspeção, operação ou apoio das actividades relacionadas com a protecção da biodiversidade e da paisagem;</h4>
+        <p>- Subvenções, empréstimos ou subvenções para apoiar as actividades relacionadas com a protecção da biodiversidade e paisagem.</p>
+    </div>
+    <div id="div055" class="content" title="A protecção do ambiente de P & D">
+        <h3>05.5.0 - A protecção do ambiente de P & D</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionada com a protecção do ambiente;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionadas com a protecção ambiental realizada por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div056" class="content" title="N.e. proteção ambiental">
+        <h3>05.6.0 - N.e. proteção ambiental</h3>
+        <h4>Administração, gestão, regulação, supervisão, operação e suporte de atividades como formulação, administração, coordenação e acompanhamento das políticas gerais, planos, programas e orçamentos para a promoção da protecção do ambiente; preparação e aplicação da legislação e normas para a prestação de serviços de protecção ambiental; produção e disseminação de informações gerais, documentação técnica e estatísticas sobre a protecção do ambiente.</h4>
+        <p>Inclui: assuntos de protecção ambiental e serviços que não podem ser atribuídos a (<a href="051" class="help">05.1</a>), (<a href="052" class="help">05.2</a>), (<a href="053" class="help">05.3</a>), (<a href="054" class="help">05.4</a>) ou (<a href="055" class="help">05.5</a>).</p>
+    </div>
+    <div id="div061" class="content" title="Desenvolvimento habitacional">
+        <h3>06.1.0 - Desenvolvimento habitacional</h3>
+        <h4>Administração de negócios e serviços de desenvolvimento de habitação; promoção, acompanhamento e avaliação das atividades de desenvolvimento de habitação ou não as atividades estão sob os auspícios das autoridades públicas; desenvolvimento e regulamentação dos padrões de habitação;</h4>
+        <p>- Remoção de favelas em relação à provisão de habitação; aquisição de terra necessária para a construção de habitações; construção ou aquisição e reforma de unidades habitacionais para o público em geral ou para as pessoas com necessidades especiais;</p>
+        <p>- Produção e divulgação de informações públicas, documentação técnica e estatísticas sobre assuntos e serviços de desenvolvimento de habitação;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a expansão, melhoria ou manutenção do parque habitacional.</p>
+        <p>Exclui: desenvolvimento e regulação de normas de construção (<a href="044" class="help">04.4.3</a>); prestações pecuniárias e prestações em espécie para ajudar os agregados a satisfazer o custo da habitação (<a href="106" class="help">10.6.0</a>).</p>
+    </div>
+    <div id="div062" class="content" title="Desenvolvimento comunitário">
+        <h3>06.2.0 - Desenvolvimento comunitário</h3>
+        <h4>Administração de negócios e serviços de desenvolvimento comunitário; administração de leis de zoneamento e uso do solo e regulamentos de construção;</h4>
+        <p>- Planejamento de novas comunidades ou das comunidades reabilitados; planear a melhoria eo desenvolvimento de instalações, tais como habitação, indústria, serviços públicos, saúde, educação, cultura, lazer, etc. para as comunidades; preparação de planos de financiamento de empreendimentos planejados;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e serviços de desenvolvimento comunitário.</p>
+        <p>Exclui: implementação do plano, isto é, a própria construção de habitações, edifícios industriais, ruas, serviços públicos, equipamentos culturais, etc. (classificados de acordo com a função); reforma agrária e reassentamento terra (<a href="042" class="help">04.2.1</a>); administração de normas de construção (<a href="044" class="help">04.4.3</a>) e padrões de habitação (<a href="061" class="help">06.1.0</a>).</p>
+    </div>
+    <div id="div063" class="content" title="Abastecimento de água">
+        <h3>06.3.0 - Abastecimento de água</h3>
+        <h4>Administração dos assuntos de abastecimento de água; avaliação das necessidades e determinação da disponibilidade em termos de tal avaliação futuros; supervisão e regulação de todas as facetas do abastecimento de água potável, incluindo a pureza da água, controle de preços e quantidades;</h4>
+        <p>- Construção ou exploração de não-empresarial-tipo de sistemas de abastecimento de água;</p>
+        <p>- Produção e divulgação de informações gerais, documentação técnica e estatísticas sobre assuntos e serviços de abastecimento de água;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar a operação, construção, manutenção ou modernização dos sistemas de abastecimento de água.</p>
+        <p>Exclui: sistemas de irrigação (<a href="042" class="help">04.2.1</a>); projetos multi-uso (<a href="047" class="help">04.7.4</a>); recolha e tratamento de águas residuais (<a href="052" class="help">05.2.0</a>).</p>
+    </div>
+    <div id="div064" class="content" title="Iluminação pública">
+        <h3>06.4.0 - Iluminação pública</h3>
+        <h4>A administração de rua assuntos de iluminação; desenvolvimento e regulamentação dos padrões de iluminação pública;</h4>
+        <p>- Instalação, operação, manutenção, modernização, etc. de iluminação pública.</p>
+        <p>Exclui: questões de iluminação e serviços associados com a construção e operação de rodovias (<a href="045" class="help">04.5.1</a>).</p>
+    </div>
+    <div id="div065" class="content" title="R & D Habitação e equipamentos colectivos">
+        <h3>06.5.0 - R & D Habitação e equipamentos colectivos</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionados com a habitação e da comunidade amenidades;</h4>
+        <p>- Subvenções, empréstimos ou subsídios de apoio à investigação aplicada e desenvolvimento experimental relacionados com a habitação e da comunidade amenidades efetuadas por órgãos não-governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: investigação de base (<a href="014" class="help">01.4.0</a>); pesquisa aplicada e desenvolvimento experimental em métodos ou materiais de construção (<a href="048" class="help">04.8.4</a>).</p>
+    </div>
+    <div id="div066" class="content" title="Habitação e equipamentos colectivos n.e.">
+        <h3>06.6.0 - Habitação e equipamentos colectivos n.e.</h3>
+        <h4>Administração, operação ou apoio de atividades como formulação, administração, coordenação e acompanhamento das políticas gerais, planos, programas e orçamentos relativos à habitação e da comunidade amenidades; preparação e aplicação da legislação e das normas relativas à habitação e da comunidade amenidades; produção e disseminação de informações gerais, documentação técnica e estatísticas relativas à habitação e da comunidade amenidades.</h4>
+        <p>Inclui: administração, operação ou atividades de apoio relacionadas com a habitação e comunitária serviços que não podem ser atribuídos a (<a href="061" class="help">06.1</a>), (<a href="062" class="help">06.2</a>), (<a href="063" class="help">06.3</a>), (<a href="064" class="help">06.4</a>) ou (<a href="065" class="help">06.5</a>).</p>
+    </div>
+    <div id="div071" class="content" title="Medicamentos, aparelhos e equipamentos">
+        <h3>07.1.1 - Produtos farmacêuticos</h3>
+        <h4>Prestação de produtos farmacêuticos, tais como medicamentos, drogas medicinais, medicamentos, soros e vacinas, vitaminas e minerais, óleo de fígado de bacalhau e óleo de fígado de alabote, contraceptivos orais;</h4>
+        <p>- Administração, operação ou apoio ao fornecimento de produtos farmacêuticos.</p>
+        <h3>07.1.2 - Outros produtos médicos</h3>
+        <h4>Prestação de produtos médicos, tais como termômetros clínicos, adesivas e não adesivas ligaduras, seringas hipodérmicas, estojos de primeiros socorros, sacos de água quente e sacos de gelo, artigos têxteis médicos, por exemplo meias elásticas e joelheiras, testes de gravidez, preservativos e outros métodos contraceptivos mecânicos;</h4>
+        <p>- Administração, operação ou de apoio à prestação de outros produtos médicos prescritos.</p>
+        <h3>07.1.3 - Aparelhos e equipamentos terapêuticos</h3>
+        <h4>De fornecimento de aparelhos e equipamentos terapêuticos, tais como óculos de correcção e lentes de contato, aparelhos auditivos, oculares, membros artificiais e outros dispositivos protéticos, aparelhos ortopédicos e suportes, calçado ortopédico, cintos cirúrgicos, treliças e suportes, minervas, equipamento de massagem médica e saúde lâmpadas, cadeiras de rodas motorizadas e não motorizadas e veículos para inválidos, camas especiais, muletas, eletrônicos e outros dispositivos para monitorização da pressão arterial, etc .;</h4>
+        <p>- Administração, operação ou apoio do fornecimento de aparelhos e equipamentos terapêuticos prescritos.</p>
+        <p>Inclui: próteses dentárias, excepto custos de implantação; reparação de aparelhos e equipamentos terapêuticos.</p>
+        <p>Exclui: aluguer de equipamento terapêutico (<a href="072" class="help">07.2.4</a>).</p>
+    </div>
+    <div id="div072" class="content" title="Serviços ambulatoriais">
+        <h3>07.2.1 - Serviços médicos gerais (IS)</h3>
+        <h4>Esta categoria inclui os serviços prestados por clínicas médicas gerais e médicos de clínica geral.</h4>
+        <p>Clínicas médicas gerais são definidos como instituições que prestem essencialmente serviços ambulatoriais que não estão limitados a uma especialidade médica particular e que são principalmente prestados por médicos qualificados. Médicos generalistas não se especializam em uma especialidade médica particular.</p>
+        <p>- Prestação de serviços médicos gerais;</p>
+        <p>- Administração, fiscalização, operação ou apoio de serviços médicos gerais entregues por clínicas médicas gerais e médicos de clínica geral.</p>
+        <p>Exclui: serviços de laboratórios de análises médicas e centros de radiologia (<a href="072" class="help">07.2.4</a>).</p>
+        <h3>07.2.2 - Serviços médicos especializados (IS)</h3>
+        <h4>Esta categoria inclui os serviços de clínicas médicas especializadas e médicos especialistas.</h4>
+        <p>Clínicas médicas especializadas e médicos especialistas diferem das clínicas médicas gerais e médicos de clínica geral em que os seus serviços estão limitados a tratamento de uma condição particular, doença, procedimento médico ou classe de paciente.</p>
+        <p>- Prestação de serviços médicos especializados;</p>
+        <p>- Administração, fiscalização, operação ou apoio de serviços médicos especializados prestados por clínicas médicas especializadas e médicos especialistas.</p>
+        <p>Inclui: serviços de especialistas em ortodontia.</p>
+        <p>Exclui: clínicas dentárias e dentistas (<a href="072" class="help">07.2.3</a>); serviços de laboratórios de análises médicas e centros de radiologia (<a href="072" class="help">07.2.4</a>).</p>
+        <h3>07.2.3 - Serviços odontológicos (IS)</h3>
+        <h4>Esta categoria inclui os serviços de clínicas gerais ou especializados de odontologia e dentistas, higienistas orais ou outros auxiliares operacionais dentários.</h4>
+        <p>Clínicas dentárias prestação de serviços ambulatoriais. Eles não são necessariamente supervisionadas ou composta por dentistas; eles podem ser supervisionadas ou composta por higienistas orais ou por auxiliares odontológicos.</p>
+        <p>- Prestação de serviços odontológicos para pacientes ambulatoriais;</p>
+        <p>- Administração, fiscalização, operação e suporte de serviços odontológicos prestados por clínicas odontológicas gerais ou especializadas e por dentistas, higienistas orais ou outros auxiliares odontológicos.</p>
+        <p>Inclui: custos de montagem dentaduras.</p>
+        <p>Exclui: dentaduras (<a href="071" class="help">07.1.3</a>); serviços de especialistas em ortodontia (<a href="072" class="help">07.2.2</a>); serviços de laboratórios de análises médicas e centros de radiologia (<a href="072" class="help">07.2.4</a>).</p>
+        <h3>07.2.4 - Serviços paramédicos</h3>
+        <h4>Prestação de serviços de saúde paramédicas para pacientes ambulatoriais;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de serviços de saúde prestados por clínicas supervisionadas por enfermeiras, parteiras, fisioterapeutas, terapeutas ocupacionais, fonoaudiólogos ou outro pessoal paramédico e dos serviços de saúde prestados por enfermeiras, parteiras e pessoal paramédico em quartos para não-consulta, em casas dos pacientes ou outras instituições não-médicos.</p>
+        <p>Inclui: acupunturistas, podólogos, quiropráticos, optometristas, os praticantes da medicina tradicional, etc .; laboratórios de análises médicas e centros de raios-x; aluguer de equipamento terapêutico; medicamente prescrito terapia de ginástica correctiva; tratamentos ambulatoriais banho termal ou de água do mar; à excepção dos serviços de ambulâncias operadas por hospitais serviços de ambulância.</p>
+        <p>Exclui: serviços de laboratórios de saúde pública (<a href="074" class="help">07.4.0</a>); laboratórios envolvidos em determinar as causas da doença (<a href="075" class="help">07.5.0</a>).</p>
+    </div>
+    <div id="div073" class="content" title="Serviços hospitalares">
+        <h3>07.3.1 - Serviços gerais do hospital</h3>
+        <h4>Prestação de serviços hospitalares gerais;</h4>
+        <p>- Administração, fiscalização, operação ou apoio dos hospitais que não limitam seus serviços a uma especialidade médica particular.</p>
+        <p>Exclui: centros médicos que não estão sob a supervisão direta de um médico qualificado (<a href="073" class="help">07.3.3</a>).</p>
+        <h3>07.3.2 - Serviços hospitalares especializados (IS)</h3>
+        <h4>Hospitais especializados diferem de hospitais gerais em que os seus serviços estão limitados a tratamento de uma condição particular, doença, ou classe de paciente, por exemplo, doenças do tórax e tuberculose, hanseníase, câncer, otorrinolaringologia, psiquiatria, obstetrícia, pediatria e assim por diante .</h4>
+        <p>- Prestação de serviços hospitalares especializados;</p>
+        <p>- Administração, fiscalização, operação ou apoio dos hospitais que limitam seus serviços a uma especialidade médica particular.</p>
+        <p>Exclui: centros de maternidade, não sob a supervisão direta de um médico qualificado (<a href="073" class="help">07.3.3</a>).</p>
+        <h3>07.3.3 - Serviços de centro de médicos e de maternidade</h3>
+        <h4>Prestação de serviços médicos e de maternidade;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de serviços de centro de médicos e de maternidade.</p>
+        <h3>07.3.4 - De enfermagem e de convalescença em casa serviços (IS)</h3>
+        <h4>De enfermagem e de convalescença casas fornecer in-paciente serviços a pessoas em recuperação de cirurgia ou uma doença debilitante ou condição que requer monitoramento e principalmente administração de medicamentos, fisioterapia e treinamento para compensar a perda de função ou descanso.</h4>
+        <p>- Prestação de serviços de enfermagem e de convalescença em casa;</p>
+        <p>- Administração, fiscalização, operação ou manutenção dos serviços do lar de idosos e convalescentes.</p>
+        <p>Inclui: instituições que servem as pessoas de idade em que o acompanhamento médico é um componente essencial; centros de reabilitação, que prestam cuidados hospitalares de saúde e de terapia de reabilitação, onde o objetivo é tratar o paciente em vez de fornecer apoio a longo prazo.</p>
+    </div>
+    <div id="div074" class="content" title="Serviços de saúde pública">
+        <h3>07.4.0 - Serviços de saúde pública</h3>
+        <h4>Prestação de serviços de saúde pública;</h4>
+        <p>- Administração, fiscalização, operação ou manutenção dos serviços de saúde pública, tais como a operação de banco de sangue (coleta, processamento, armazenamento, transporte), detecção de doença (câncer, tuberculose, doenças venéreas), prevenção (imunização, a inoculação), o monitoramento (nutrição infantil , saúde infantil), a recolha de dados epidemiológicos, serviços de planejamento familiar e assim por diante;</p>
+        <p>- Preparação e divulgação de informações sobre questões de saúde pública.</p>
+        <p>Inclui: serviços públicos de saúde prestados por equipes especiais para grupos de clientes, muitos dos quais se encontram em bom estado de saúde, nos locais de trabalho, escolas ou outras configurações não-médicos; serviços públicos de saúde não relacionados com um hospital, clínica ou médico; serviços públicos de saúde não entregues pelos médicos medicamente qualificados; laboratórios de serviços de saúde pública.</p>
+        <p>Exclui: laboratórios de análises médicas (<a href="072" class="help">07.2.4</a>); laboratórios envolvidos em determinar as causas da doença (<a href="075" class="help">07.5.0</a>).</p>
+    </div>
+    <div id="div075" class="content" title="R & D da Saúde">
+        <h3>07.5.0 - R & D da Saúde</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionada com a saúde;</h4>
+        <p>- Subvenções, empréstimos e subsídios para apoiar a investigação aplicada e desenvolvimento experimental relacionada com a saúde realizada por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Inclui: laboratórios envolvidos em determinar as causas da doença.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div076" class="content" title="N.e. Saúde">
+        <h3>07.6.0 - N.e. Saúde</h3>
+        <h4>Administração, operação ou apoio de atividades como formulação, administração, coordenação e acompanhamento de políticas globais de saúde, planos, programas e orçamentos; preparação e aplicação da legislação e normas para a prestação de serviços de saúde, incluindo o licenciamento de estabelecimentos médicos e pessoal médico e paramédico; produção e disseminação de informações gerais, documentação técnica e estatísticas sobre a saúde.</h4>
+        <p>Inclui: os assuntos e serviços que não podem ser atribuídos a (<a href="071" class="help">07.1</a>), (<a href="072" class="help">07.2</a>), (<a href="073" class="help">07.3</a>), (<a href="074" class="help">07.4</a>) ou (<a href="075" class="help">07.5</a>) de saúde.</p>
+    </div>
+    <div id="div081" class="content" title="Serviços desportivos e recreativos">
+        <h3>08.1.0 - Serviços desportivos e recreativos</h3>
+        <h4>Prestação de serviços desportivos e recreativos; administração de assuntos esportivos e recreativos; supervisão e regulação de instalações desportivas;</h4>
+        <p>- Operação ou suporte de instalações para actividades desportivas activas ou eventos (campos de jogos, campos de ténis, campos de squash, pistas de corrida, campos de golfe, ringues de boxe, pistas de skate, ginásios, etc.); operação ou suporte de instalações para actividades desportivas passivas ou eventos (principalmente locais especialmente equipados para cartas de jogar, jogos de tabuleiro, etc.); operação ou suporte de instalações para atividades de lazer (parques, praias, parques de campismo e estabelecimentos de alojamento associados fornecidos numa base não comercial, piscinas, banhos públicos para lavar, etc.);</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar as equipes ou concorrentes ou jogadores individuais.</p>
+        <p>Inclui: instalações de alojamento espectador; representação nacional, regional ou local equipe em eventos esportivos.</p>
+        <p>Exclui: jardins zoológicos ou botânicos, aquários, arboretos e instituições semelhantes (<a href="082" class="help">08.2.0</a>); instalações desportivas e recreativas associadas a instituições de ensino (classificados para a classe adequada da divisão 09).</p>
+    </div>
+    <div id="div082" class="content" title="Serviços culturais">
+        <h3>08.2.0 - Serviços culturais</h3>
+        <h4>Prestação de serviços culturais; administração dos assuntos culturais; supervisão e regulação de equipamentos culturais;</h4>
+        <p>- Operação ou suporte de instalações para atividades culturais (bibliotecas, museus, galerias de arte, teatros, salas de exposições, monumentos, casas e sítios históricos, jardins zoológicos e botânicos, aquários, arboretos, etc.); produção, operação ou apoio a eventos culturais (concertos, teatro e cinema produções, mostras de arte, etc.);</p>
+        <p>- Subvenções, empréstimos ou subsídios individuais para apoiar artistas, escritores, designers, compositores e outros que trabalham nas artes ou organizações empenhadas na promoção de atividades culturais.</p>
+        <p>Inclui: celebrações nacionais, regionais ou locais, desde que não se destinam principalmente para atrair turistas.</p>
+        <p>Exclui: eventos culturais destinados à apresentação além das fronteiras nacionais (<a href="011" class="help">01.1.3</a>); celebrações nacionais, regionais ou locais destinados principalmente para atrair turistas (<a href="047" class="help">04.7.3</a>); produção de material cultural destinada à distribuição por radiodifusão (<a href="083" class="help">08.3.0</a>).</p>
+    </div>
+    <div id="div083" class="content" title="Serviços de radiodifusão e publicação">
+        <h3>08.3.0 - Serviços de radiodifusão e publicação</h3>
+        <h4>A administração de radiodifusão e publicação dos assuntos internos; supervisão e regulamentação dos serviços de radiodifusão e de publicação;</h4>
+        <p>- Operação ou apoio de serviços de radiodifusão e de publicação;</p>
+        <p>- Subvenções, empréstimos ou subsídios para apoiar: a construção ou aquisição de instalações para a televisão ou radiodifusão; a construção ou a aquisição de plantas, equipamentos ou materiais para jornal, revista ou publicação de livros; a produção de material para, e sua apresentação por, radiodifusão; a recolha de notícias e outras informações; a distribuição de trabalhos publicados.</p>
+        <p>Exclui: escritórios de impressão do governo e plantas (<a href="013" class="help">01.3.3</a>); oferta de educação por rádio ou televisão (09).</p>
+    </div>
+    <div id="div084" class="content" title="Serviços comunitários religiosos e outros">
+        <h3>08.4.0 - Serviços comunitários religiosos e outros</h3>
+        <h4>A administração de assuntos da comunidade religiosas e outras;</h4>
+        <p>- Fornecimento de instalações para serviços comunitários religiosos e outros, incluindo suporte para o seu funcionamento, manutenção e reparação;</p>
+        <p>- O pagamento do clero ou outros agentes das instituições religiosas; apoio à realização de serviços religiosos; subvenções, empréstimos ou subsídios de apoio fraterno, cívico, juventude e organizações sociais ou sindicatos e partidos políticos.</p>
+    </div>
+    <div id="div085" class="content" title="R & D recreação, cultura e religião">
+        <h3>08.5.0 - R & D recreação, cultura e religião</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionada com a recreação, cultura e religião;</h4>
+        <p>- Subvenções, empréstimos e subsídios para apoiar a investigação aplicada e desenvolvimento experimental relacionada com a recreação, cultura e religião executadas por organismos não-governamentais, como os institutos de investigação e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div086" class="content" title="Recreação, cultura e religião n.e.">
+        <h3>08.6.0 - Recreação, cultura e religião n.e.</h3>
+        <h4>Administração, operação ou apoio de atividades como formulação, administração, coordenação e acompanhamento das políticas gerais, planos, programas e orçamentos para a promoção do desporto, recreação, cultura e religião; preparação e aplicação da legislação e normas para a prestação de serviços recreativos e culturais; produção e disseminação de informações gerais, documentação técnica e estatísticas sobre recreação, cultural e religião.</h4>
+        <p>Inclui: assuntos e serviços relacionados com a recreação, cultura e religião que não pode ser atribuído a (<a href="081" class="help">08.1</a>), (<a href="082" class="help">08.2</a>), (<a href="083" class="help">08.3</a>), (<a href="084" class="help">08.4</a>) ou (<a href="085" class="help">08.5</a>).</p>
+    </div>
+    <div id="div091" class="content" title="Pré-primário e primário">
+        <h3>09.1.1 - Educação pré-escolar</h3>
+        <h4>Prestação de ensino pré-primário no nível CITE-97 nível 0;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de escolas e outras instituições que prestam ensino pré-primário no nível CITE-97 nível 0.</p>
+        <p>Exclui: serviços subsidiários à educação (<a href="096" class="help">09.6.0</a>).</p>
+        <h3>09.1.2 - Educação primária</h3>
+        <h4>Prestação de ensino primário a nível ISCED-97 1;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de escolas e outras instituições que prestam ensino primário no nível CITE-97 de nível 1.</p>
+        <p>Inclui: programas de alfabetização para estudantes demasiado velhos para a escola primária.</p>
+        <p>Exclui: serviços subsidiários à educação (<a href="096" class="help">09.6.0</a>).</p>
+    </div>
+    <div id="div092" class="content" title="Educação secundária">
+        <h3>09.2.1 - Educação secundário inferior</h3>
+        <h4>Prestação de ensino secundário inferior ao nível ISCED-97 2;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de escolas e outras instituições de formação inferior ao secundário ISCED-97 de nível 2;</p>
+        <p>- Bolsas, subsídios, empréstimos e subsídios para apoiar os alunos que buscam o ensino secundário inferior ao ISCED-97 de nível 2.</p>
+        <p>Inclui: educação fora da escola secundário inferior para adultos e jovens.</p>
+        <p>Exclui: serviços subsidiários à educação (<a href="096" class="help">09.6.0</a>).</p>
+        <h3>09.2.2 - Ensino secundário</h3>
+        <h4>Prestação de ensino secundário a nível ISCED-97 3;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de escolas e outras instituições que prestam ensino secundário no ISCED-97 do nível 3;</p>
+        <p>- Bolsas, subsídios, empréstimos e subsídios para apoiar os alunos que buscam o ensino secundário superior no nível CITE-97 de nível 3.</p>
+        <p>Inclui: ensino secundário fora da escola para adultos e jovens.</p>
+        <p>Exclui: serviços subsidiários à educação (<a href="096" class="help">09.6.0</a>).</p>
+    </div>
+    <div id="div093" class="content" title="Ensino não superior pós-secundário">
+        <h3>09.3.0 - Ensino não superior pós-secundário</h3>
+        <h4>Prestação de ensino não superior pós-secundário no ISCED-97 de nível 4;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de instituições que prestam ensino não superior pós-secundário no ISCED-97 de nível 4;</p>
+        <p>- Bolsas, subsídios, empréstimos e subsídios para apoiar estudantes no ensino não-superior pós-secundário no ISCED-97 de nível 4.</p>
+        <p>Inclui: ensino não superior pós-secundário out-of-escolar para jovens e adultos.</p>
+        <p>Exclui: serviços subsidiários à educação (<a href="096" class="help">09.6.0</a>).</p>
+    </div>
+    <div id="div094" class="content" title="Educação terciária">
+        <h3>09.4.1 - Primeira fase do ensino superior</h3>
+        <h4>Prestação de ensino superior a nível CITE 97 5;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de universidades e outras instituições que prestam ensino superior no nível CITE-97 nível 5;</p>
+        <p>- Bolsas, subsídios, empréstimos e subsídios para apoiar os alunos prosseguem o ensino superior no nível CITE-97 de nível 5.</p>
+        <p>Exclui: serviços subsidiários à educação (<a href="096" class="help">09.6.0</a>).</p>
+        <h3>09.4.2 - Segunda fase do ensino superior</h3>
+        <h4>Prestação de ensino superior a nível CITE-97 6;</h4>
+        <p>- Administração, fiscalização, operação ou apoio de universidades e outras instituições que prestam ensino superior no nível CITE-97 nível 6;</p>
+        <p>- Bolsas, subsídios, empréstimos e subsídios para apoiar os alunos prosseguem o ensino superior no nível CITE-97 nível 6.</p>
+        <p>Exclui: serviços subsidiários à educação (<a href="096" class="help">09.6.0</a>).</p>
+    </div>
+    <div id="div095" class="content" title="Educação não definível por níveis">
+        <h3>09.5.0 - Educação não definível por níveis</h3>
+        <h4>Prestação de ensino não definível por níveis (ou seja, programas educacionais, geralmente para adultos, que não requerem qualquer instrução específica anterior, em especial formação profissional e desenvolvimento cultural);</h4>
+        <p>- Administração, fiscalização, operação ou apoio das instituições de formação não definível por níveis;</p>
+        <p>- Bolsas, subsídios, empréstimos e subsídios para apoiar os alunos prosseguem programas de educação não definível por níveis.</p>
+    </div>
+    <div id="div096" class="content" title="Serviços de apoio à educação">
+        <h3>09.6.0 - Serviços de apoio à educação</h3>
+        <h4>Prestação de serviços subsidiários à educação;</h4>
+        <p>- Administração, fiscalização, operação ou suporte de transporte, alimentação, alojamento, assistência médica e odontológica e serviços subsidiários relacionados principalmente para os alunos, independentemente do nível.</p>
+        <p>Exclui: serviços de monitoramento de saúde escolar e de prevenção (<a href="074" class="help">07.4.0</a>); bolsas, subsídios, empréstimos e subsídios em dinheiro para custear as despesas de serviços subsidiários (<a href="091" class="help">09.1</a>), (<a href="092" class="help">09.2</a>), (<a href="093" class="help">09.3</a>), (<a href="094" class="help">09.4</a>) ou (<a href="095" class="help">09.5</a>).</p>
+    </div>
+    <div id="div097" class="content" title="R & D Educação">
+        <h3>09.7.0 - R & D Educação</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionada com a educação;</h4>
+        <p>- Subvenções, empréstimos e subsídios para apoiar a investigação aplicada e desenvolvimento experimental relacionada com a educação conduzidos por entidades não-governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div098" class="content" title="Educação n.e.">
+        <h3>09.8.0 - Educação n.e.</h3>
+        <h4>Administração, operação ou apoio de atividades como formulação, administração, coordenação e acompanhamento globais de educação políticas, planos, programas e orçamentos; preparação e aplicação da legislação e normas para a prestação de educação, incluindo o licenciamento de estabelecimentos de ensino; produção e disseminação de informações gerais, documentação técnica e estatísticas sobre educação.</h4>
+        <p>Inclui: os assuntos e serviços que não podem ser atribuídos a (<a href="091" class="help">09.1</a>), (<a href="092" class="help">09.2</a>), (<a href="093" class="help">09.3</a>), (<a href="094" class="help">09.4</a>), (<a href="095" class="help">09.5</a>), (<a href="096" class="help">09.6</a>) ou (<a href="097" class="help">09.7</a>) educação.</p>
+    </div>
+    <div id="div101" class="content" title="Doença e invalidez">
+        <h3>10.1.1 - Doença</h3>
+        <h4>Prestação de proteção social sob a forma de prestações pecuniárias ou prestações em espécie que substituem no todo ou em parte a perda de rendimentos durante uma incapacidade temporária para trabalhar devido a doença ou acidente;</h4>
+        <p>- Administração, operação ou apoio de tais regimes de protecção social;</p>
+        <p>- Prestações pecuniárias, como a taxa fixa ou rendimentos relacionados com pagamentos de licença de saúde, pagamentos diversos fornecidas para ajudar pessoas temporariamente impossibilitado de trabalhar devido a doença ou acidente;</p>
+        <p>- prestações em espécie, tais como assistência com as tarefas diárias concedidas a pessoas temporariamente impossibilitado de trabalhar devido a doença ou acidente (Ajuda de casa, meios de transporte, etc.).</p>
+        <h3>10.1.2 - Incapacidade</h3>
+        <h4>Prestação de proteção social sob a forma de prestações pecuniárias ou prestações em espécie a pessoas que são total ou parcialmente incapaz de exercer uma actividade económica ou levar uma vida normal devido a uma deficiência física ou mental que seja permanente ou susceptível de persistir além de um mínimo prazo fixado;</h4>
+        <p>- Administração, operação ou apoio de tais regimes de protecção social;</p>
+        <p>- Prestações pecuniárias, como as pensões de invalidez pagas a pessoas abaixo da idade legal de reforma que se deparam com uma deficiência que prejudica sua capacidade de trabalho, prestações de reforma antecipada pagas aos trabalhadores mais idosos que se reformem antes de atingir a idade normal de reforma devido à redução da capacidade para o trabalho, cuidados abonos, subsídios pagos às pessoas com deficiência realizem trabalho adaptado à sua condição ou formação profissional, outros pagamentos periódicos ou de montante fixo concedidas a pessoas com deficiência, por razões de protecção social;</p>
+        <p>- prestações em espécie, tais como alojamento e possivelmente placa fornecida às pessoas com deficiência nos estabelecimentos apropriados, a assistência prestada às pessoas com deficiência para ajudá-los com as tarefas diárias (casa ajuda, meios de transporte, etc.), os subsídios pagos à pessoa que cuida de pessoas com deficiência pessoa, formação profissional e outro, fornecido para promover a reabilitação profissional e social das pessoas com deficiência, serviços diversos e produtos fornecidos às pessoas com deficiência para capacitá-los a participar de atividades de lazer e culturais, ou de viajar ou participar na vida da comunidade.</p>
+        <p>Exclui: prestações pecuniárias e prestações em espécie concedidas a pessoas com deficiência ao atingir a idade legal de reforma (<a href="102" class="help">10.2.0</a>).</p>
+    </div>
+    <div id="div102" class="content" title="Velhice">
+        <h3>10.2.0 - Velhice</h3>
+        <h4>Prestação de proteção social sob a forma de prestações pecuniárias e prestações em espécie contra os riscos ligados à velhice (perda de rendimento, um rendimento inadequado, falta de independência na execução das tarefas diárias, participação reduzida na vida social e comunitária, etc.);</h4>
+        <p>- Administração, operação ou apoio de tais regimes de protecção social;</p>
+        <p>- Prestações pecuniárias, como as pensões de velhice pagas a pessoas ao atingir a idade normal de reforma, as pensões de velhice antecipadas pagas aos trabalhadores mais idosos que se reformam antes da idade normal de reforma, pensões de reforma parciais pago antes ou após a idade normal de reforma para trabalhadores mais idosos que continuam a trabalhar mas reduzem o horário de trabalho, subsídios de assistência, outros pagamentos periódicos ou de montante fixo paga no momento da aposentadoria ou por conta da velhice;</p>
+        <p>- prestações em espécie, tais como alojamento e às vezes conselho prestada às pessoas idosas ou em instituições especializadas ou que ficam com as famílias em estabelecimentos adequados, assistência prestada às pessoas idosas para ajudá-los com as tarefas diárias (casa ajuda, meios de transporte, etc.), os subsídios pagos para a pessoa que cuida de uma pessoa idosa, serviços diversos e produtos prestados aos idosos para lhes permitir participar em actividades lúdicas e culturais ou para viajar ou para participar na vida da comunidade.</p>
+        <p>Inclui: os regimes de pensões para o pessoal militar e para funcionários do governo.</p>
+        <p>Exclui: prestações de reforma antecipada pagas aos trabalhadores mais idosos que se reformem antes de atingir a idade normal de reforma por invalidez (<a href="101" class="help">10.1.2</a>) ou de desemprego (<a href="105" class="help">10.5.0</a>).</p>
+    </div>
+    <div id="div103" class="content" title="Sobreviventes">
+        <h3>10.3.0 - Sobreviventes</h3>
+        <h4>Prestação de proteção social sob a forma de prestações pecuniárias e prestações em espécie a pessoas que são sobreviventes de uma pessoa falecida (tais como o cônjuge da pessoa, ex-cônjuge, filhos, netos, pais ou outros parentes);</h4>
+        <p>- Administração, operação ou apoio de tais regimes de protecção social;</p>
+        <p>- prestações pecuniárias, como as pensões de sobrevivência, subsídios por morte, outros pagamentos periódicos ou de montante fixo aos sobreviventes;</p>
+        <p>- prestações em espécie, tais como pagamentos para despesas de funeral, serviços diversos e produtos prestados aos sobreviventes a fim de lhes permitir participar na vida da comunidade.</p>
+    </div>
+    <div id="div104" class="content" title="Família e crianças">
+        <h3>10.4.0 - Família e crianças</h3>
+        <h4>Prestação de proteção social sob a forma de benefícios e prestações em espécie para as famílias com crianças dependentes de caixa;</h4>
+        <p>- Administração, operação ou apoio de tais regimes de protecção social;</p>
+        <p>- Prestações pecuniárias, tais como subsídios de maternidade, o subsídio de nascimento, licença parental, abonos de família ou criança, outros pagamentos periódicos ou de montante fixo de apoio às famílias e ajudá-los a suportar os custos de necessidades específicas (por exemplo, os das famílias monoparentais ou famílias com crianças deficientes);</p>
+        <p>- Prestações em espécie, tais como abrigo e alimentação fornecida às crianças pré-escolares durante o dia ou parte do dia, a assistência financeira para o pagamento de uma enfermeira para cuidar de crianças durante o dia, abrigo e alimentação fornecida às crianças e famílias em um base permanente (orfanatos, famílias de acolhimento, etc.), produtos e serviços prestados em casa para as crianças ou para aqueles que cuidam deles, serviços diversos e produtos fornecidos às famílias, jovens ou crianças (centros de férias e de lazer).</p>
+        <p>Exclui: serviços de planejamento familiar (<a href="074" class="help">07.4.0</a>).</p>
+    </div>
+    <div id="div105" class="content" title="Desemprego">
+        <h3>10.5.0 - Desemprego</h3>
+        <h4>Prestação de proteção social sob a forma de prestações pecuniárias e prestações em espécie a pessoas que são capazes de trabalho, disponível para o trabalho, mas são incapazes de encontrar um emprego adequado;</h4>
+        <p>- Administração, operação ou apoio de tais regimes de protecção social;</p>
+        <p>- Prestações pecuniárias, como o subsídio de desemprego total e parcial, prestações de reforma antecipada pagas aos trabalhadores mais idosos que se reformem antes de atingir a idade normal de reforma devido a desemprego ou de redução de trabalho causada por medidas económicas, subsídios para grupos-alvo no mercado de trabalho que participam em sistemas de formação destinados a desenvolver o seu potencial de emprego, compensação de redundância, outros pagamentos periódicos ou de montante fixo aos desempregados, em particular a desempregados de longa duração;</p>
+        <p>- prestações em espécie, tais como mobilidade e reinstalação pagamentos, formação profissional prestada às pessoas sem emprego ou reciclagem profissional prestada a pessoas em risco de perder o emprego, alojamento, alimentação ou roupas concedidas a desempregados e suas famílias.</p>
+        <p>Exclui: programas gerais ou esquemas dirigidos no sentido de aumentar a mobilidade do trabalho, reduzindo a taxa de desemprego ou promover o emprego dos grupos desfavorecidos ou outras caracterizadas por um elevado desemprego (<a href="041" class="help">04.1.2</a>); prestações pecuniárias e prestações em espécie pago aos desempregados que ao atingir a idade legal de reforma (<a href="102" class="help">10.2.0</a>).</p>
+    </div>
+    <div id="div106" class="content" title="Habitação">
+        <h3>10.6.0 - Habitação</h3>
+        <h4>Prestação de proteção social sob a forma de prestações em espécie para ajudar os agregados a satisfazer o custo da habitação (destinatários desses benefícios são meio-testados);</h4>
+        <p>- Administração, operação ou apoio de tais regimes de protecção social;</p>
+        <p>- prestações em espécie, tais como os pagamentos efectuados a título temporário ou a longo prazo para ajudar os inquilinos com custos de aluguel, pagamentos para aliviar os custos de habitação actuais de proprietários-ocupantes (que é para ajudar com o pagamento de hipotecas ou de juros), o fornecimento de baixo -Custo ou habitação social.</p>
+    </div>
+    <div id="div107" class="content" title="N.e. exclusão social">
+        <h3>10.7.0 - N.e. exclusão social</h3>
+        <h4>Prestação de proteção social sob a forma de prestações pecuniárias e prestações em espécie a pessoas que são socialmente excluídos ou em risco de exclusão social (tais como pessoas que são indigentes, pessoas com baixos rendimentos, imigrantes, povos indígenas, refugiados, alcoólicos e toxicodependentes , vítimas da violência criminal, etc.);</h4>
+        <p>- Administração e funcionamento de tais regimes de protecção social;</p>
+        <p>- Prestações pecuniárias, como o apoio ao rendimento e outros pagamentos em dinheiro para as pessoas indigentes ou vulneráveis ??para ajudar a aliviar a pobreza ou ajudar em situações difíceis;</p>
+        <p>- prestações em espécie, como de curto prazo e abrigo a longo prazo e placa prestados a pessoas indigentes ou vulneráveis, a reabilitação de alcoólicos e toxicodependentes, serviços e bens para ajudar as pessoas vulneráveis, tais como aconselhamento, abrigo dia, ajudar com a realização diária tarefas, alimentação, vestuário, combustível, etc.</p>
+    </div>
+    <div id="div108" class="content" title="Protecção social R & D">
+        <h3>10.8.0 - Protecção social R & D</h3>
+        <h4>Administração e funcionamento dos órgãos do governo envolvidos na investigação aplicada e desenvolvimento experimental relacionadas com a protecção social;</h4>
+        <p>- Subvenções, empréstimos e subsídios para apoiar a investigação aplicada e desenvolvimento experimental relacionada com a protecção social empreendida por organismos não governamentais, tais como institutos de pesquisa e universidades.</p>
+        <p>Exclui: pesquisa básica (<a href="014" class="help">01.4.0</a>).</p>
+    </div>
+    <div id="div109" class="content" title="N.e. protecção social">
+        <h3>10.9.0 - N.e. protecção social</h3>
+        <h4>Administração, operação ou apoio de atividades como formulação, administração, coordenação e controlo da protecção social políticas, planos, programas e orçamentos globais; preparação e aplicação da legislação e normas para a prestação de protecção social; produção e disseminação de informações gerais, documentação técnica e estatísticas sobre protecção social.</h4>
+        <p>Inclui: provisão de proteção social sob a forma de prestações pecuniárias e prestações em espécie para vítimas de incêndios, inundações, terremotos e outros desastres em tempos de paz; compra e armazenamento de alimentos, equipamentos e outros suprimentos para uso de emergência em caso de desastres em tempos de paz; outros assuntos de protecção social e serviços que não podem ser atribuídos a (<a href="101" class="help">10.1</a>), (<a href="102" class="help">10.2</a>), (<a href="103" class="help">10.3</a>), (<a href="104" class="help">10.4</a>), (<a href="105" class="help">10.5</a>), (<a href="106" class="help">10.6</a>), (<a href="107" class="help">10.7</a>) ou (<a href="108" class="help">10.8</a>).</p>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    /*$(function () {
+        $("#menu").menu({
+            items: "> :not(.ui-widget-header)",
+            select: function (event, ui) {
+                hideContentDivs();
+                var tmp_div = ui.item[0].id;
+                $('#div'+tmp_div).show();
+            }
+        });
+    });*/
+
+    function hideContentDivs() {
+        $('.main div').each(function () {
+            $(this).hide();
+        });
+    }
+    hideContentDivs();
+
+    function showID() {
+        $('#div' + '@(ViewData["ID"] == null ? '0' : ViewData["ID"])').show();
+    }
+    showID();
+
+    $(".help").click(function (e) {
+        e.preventDefault();
+        hideContentDivs();
+        $('#div' + $(this).attr("href")).show();
+        $("#dialog").dialog('option', 'title', $('#div' + $(this).attr("href")).attr("title"));
+    });
+
+</script>

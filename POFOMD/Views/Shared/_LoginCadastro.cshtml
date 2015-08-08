@@ -1,0 +1,122 @@
+﻿
+@using POFOMD.Models
+@model LoginMasterModel
+
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="bs-example bs-example-tabs">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#signin" data-toggle="tab">Entrar</a></li>
+                    <li class=""><a href="#signup" data-toggle="tab">Cadastrar-se</a></li>
+                </ul>
+            </div>
+
+            <div class="modal-body">
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="signin">
+                        @using (Ajax.BeginForm("Login", "Account", new AjaxOptions() { HttpMethod = "POST", UpdateTargetId = "SignIn", OnSuccess = "sucesso" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Login.UserName, new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.Login.UserName, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Login.UserName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Login.Password, new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.PasswordFor(m => m.Login.Password, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Login.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="">
+                                    <div class="">
+                                        @Html.CheckBoxFor(m => m.Login.RememberMe)
+                                        @Html.LabelFor(m => m.Login.RememberMe)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="">
+                                    <input type="submit" value="Entrar" id="Cadastrando" class="btn btn-primary btn-block" />
+                                </div>
+                            </div>
+                        }
+                        <div class="form-group" id="SignIn"></div>
+                    </div>
+                    <div class="tab-pane fade" id="signup">
+                        @using (Ajax.BeginForm("Register", "Account", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "RegisterDiv", OnSuccess = "sucesso" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary("", new { @class = "text-danger" })
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Register.UserName, new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.Register.UserName, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Register.Name, new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.Register.Name, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Register.Email, new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.Register.Email, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Register.BirthDate, new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.Register.BirthDate, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Register.Password, new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.PasswordFor(m => m.Register.Password, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Register.ConfirmPassword, new { @class = "control-label" })
+                                <div class="controls">
+                                    @Html.PasswordFor(m => m.Register.ConfirmPassword, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="">
+                                    <input type="submit" class="btn btn-primary btn-block" value="Cadastrar" />
+                                </div>
+                            </div>
+                        }
+                        <div class="form-group" id="RegisterDiv"></div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function sucesso() {
+                    $.get('@Url.Action("LoginPartial", "Account")', function (html) {
+                        $('#LoginButton').html(html);
+                    });
+                    setTimeout('$("#Fechar").click()', 800);
+                    setTimeout('$("#msgfechar").click()', 1000);
+                    $(':input', '#myTabContent')
+                        .not(':button, :submit, :reset, :hidden, :checkbox')
+                        .val('');
+                };
+            </script>
+            <div class="modal-footer">
+                <center>
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal" id="Fechar">Close</button>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
